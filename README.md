@@ -1,6 +1,6 @@
 # :rainbow: RS07-spectrum :rainbow:
 
-![green_screenshot](https://github.com/MATF-RS17/RS07-spectrum/blob/master/screenshots/06_2017-06-05.gif)
+![green_screenshot](screenshots/06_2017-06-05.gif)
 
 ## :page_facing_up: Description
 This is a Software Development course project - 2D-platform-puzzle game.
