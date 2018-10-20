@@ -1,0 +1,43 @@
+N/A
+
+# Player spawn coordinates
+p 60 470
+
+
+#### Static entities ####
+
+#   Border
+
+# Bottom
+s block 0 550 800 50
+# Left side
+s block 0 0 20 550
+# Right side
+s block 780 0 20 550
+
+s block 300 500 100 50
+s spike 400 525 100 25
+s block 500 500 100 50
+
+
+#   Purple obsticle
+c purple
+s wall 20 350 150 30
+s wall 170 350 30 200
+
+#   Laser
+c red
+s laser 100 200 500 0 down
+
+#   Door
+c green
+s door 60 450 012 680 470
+c blue
+s door 680 450 015
+
+c purple
+s door 50 50 013 620 170
+
+c green
+s wall 30 150 100 10
+s wall 250 150 100 10

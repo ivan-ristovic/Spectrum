@@ -1,0 +1,118 @@
+\hypertarget{class_game_loader}{}\section{Game\+Loader Class Reference}
+\label{class_game_loader}\index{Game\+Loader@{Game\+Loader}}
+
+
+Loads/\+Saves the game state.  
+
+
+
+
+{\ttfamily \#include $<$gameloader.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_game_loader_af775cdf000a140a8a977d75ef191837d}{Game\+Loader} (const Q\+String \&file\+Name, char flag)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_game_loader}{Game\+Loader} constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_loader_ad0cd1a830dde408ea6951f3ef3237f6e}\label{class_game_loader_ad0cd1a830dde408ea6951f3ef3237f6e}} 
+{\bfseries Game\+Loader} (const \hyperlink{class_game_loader}{Game\+Loader} \&)=delete
+\item 
+\mbox{\Hypertarget{class_game_loader_a7ffc953ad4a2ca243babdd82d95a022d}\label{class_game_loader_a7ffc953ad4a2ca243babdd82d95a022d}} 
+\hyperlink{class_game_loader}{Game\+Loader} \& {\bfseries operator=} (const \hyperlink{class_game_loader}{Game\+Loader} \&)=delete
+\item 
+bool \hyperlink{class_game_loader_a80f63255ecc84d19e231fcd7069fe07f}{is\+Valid} () const
+\begin{DoxyCompactList}\small\item\em Get the file validity indicator. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_game_loader_ac255d6d8ade43f4ee3e760495f58ff4a}{read\+Game\+Data} (bool unlocked\+Colors\mbox{[}$\,$\mbox{]}, std\+::vector$<$ bool $>$ \&completed\+Levels)
+\begin{DoxyCompactList}\small\item\em Read game data from the file. \end{DoxyCompactList}\item 
+void \hyperlink{class_game_loader_aa597ca460dd45081cfbbfc3f71a75c5a}{write\+Game\+Data} (unsigned level\+ID, const bool unlocked\+Colors\mbox{[}$\,$\mbox{]}, const std\+::vector$<$ bool $>$ \&completed\+Levels)
+\begin{DoxyCompactList}\small\item\em Write game data to the file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Loads/\+Saves the game state. 
+
+The main functionality of \hyperlink{class_game_loader}{Game\+Loader} is saving/loading the game.
+
+The game save state is made of the current unlocked colors, the current level and the unlocked levels vector.
+
+Upon loading/saving, they are all set to those values. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_loader_af775cdf000a140a8a977d75ef191837d}\label{class_game_loader_af775cdf000a140a8a977d75ef191837d}} 
+\index{Game\+Loader@{Game\+Loader}!Game\+Loader@{Game\+Loader}}
+\index{Game\+Loader@{Game\+Loader}!Game\+Loader@{Game\+Loader}}
+\subsubsection{\texorpdfstring{Game\+Loader()}{GameLoader()}}
+{\footnotesize\ttfamily Game\+Loader\+::\+Game\+Loader (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{file\+Name,  }\item[{char}]{flag }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{class_game_loader}{Game\+Loader} constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & File to save/load from \\
+\hline
+{\em flag} & Flag to determine whether to save (\textquotesingle{}w\textquotesingle{}), or load (\textquotesingle{}r\textquotesingle{}) \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_loader_a80f63255ecc84d19e231fcd7069fe07f}\label{class_game_loader_a80f63255ecc84d19e231fcd7069fe07f}} 
+\index{Game\+Loader@{Game\+Loader}!is\+Valid@{is\+Valid}}
+\index{is\+Valid@{is\+Valid}!Game\+Loader@{Game\+Loader}}
+\subsubsection{\texorpdfstring{is\+Valid()}{isValid()}}
+{\footnotesize\ttfamily bool Game\+Loader\+::is\+Valid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the file validity indicator. 
+
+\begin{DoxyReturn}{Returns}
+File validity indicator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_loader_ac255d6d8ade43f4ee3e760495f58ff4a}\label{class_game_loader_ac255d6d8ade43f4ee3e760495f58ff4a}} 
+\index{Game\+Loader@{Game\+Loader}!read\+Game\+Data@{read\+Game\+Data}}
+\index{read\+Game\+Data@{read\+Game\+Data}!Game\+Loader@{Game\+Loader}}
+\subsubsection{\texorpdfstring{read\+Game\+Data()}{readGameData()}}
+{\footnotesize\ttfamily Q\+String Game\+Loader\+::read\+Game\+Data (\begin{DoxyParamCaption}\item[{bool}]{unlocked\+Colors\mbox{[}$\,$\mbox{]},  }\item[{std\+::vector$<$ bool $>$ \&}]{completed\+Levels }\end{DoxyParamCaption})}
+
+
+
+Read game data from the file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unlocked\+Colors} & Unlocked colors vector \\
+\hline
+{\em completed\+Levels} & Completed levels vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_level}{Level} name to load from the caller 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_loader_aa597ca460dd45081cfbbfc3f71a75c5a}\label{class_game_loader_aa597ca460dd45081cfbbfc3f71a75c5a}} 
+\index{Game\+Loader@{Game\+Loader}!write\+Game\+Data@{write\+Game\+Data}}
+\index{write\+Game\+Data@{write\+Game\+Data}!Game\+Loader@{Game\+Loader}}
+\subsubsection{\texorpdfstring{write\+Game\+Data()}{writeGameData()}}
+{\footnotesize\ttfamily void Game\+Loader\+::write\+Game\+Data (\begin{DoxyParamCaption}\item[{unsigned}]{level\+ID,  }\item[{const bool}]{unlocked\+Colors\mbox{[}$\,$\mbox{]},  }\item[{const std\+::vector$<$ bool $>$ \&}]{completed\+Levels }\end{DoxyParamCaption})}
+
+
+
+Write game data to the file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level\+ID} & Current level ID \\
+\hline
+{\em unlocked\+Colors} & Unlocked colors vector \\
+\hline
+{\em completed\+Levels} & Completed levels vector \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/gameloader.\+h\item 
+src/gameloader.\+cpp\end{DoxyCompactItemize}

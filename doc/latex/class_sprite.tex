@@ -1,0 +1,152 @@
+\hypertarget{class_sprite}{}\section{Sprite Class Reference}
+\label{class_sprite}\index{Sprite@{Sprite}}
+
+
+An class representing collections of images used for the animations.  
+
+
+
+
+{\ttfamily \#include $<$sprite.\+h$>$}
+
+Inheritance diagram for Sprite\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_sprite}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_sprite_a12cba3ac1868418add3c4d95ce87e615}\label{class_sprite_a12cba3ac1868418add3c4d95ce87e615}} 
+\hyperlink{class_sprite_a12cba3ac1868418add3c4d95ce87e615}{Sprite} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_sprite}{Sprite} constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sprite_ac7d053af8f5cf1221d3cf016a4c65874}\label{class_sprite_ac7d053af8f5cf1221d3cf016a4c65874}} 
+void \hyperlink{class_sprite_ac7d053af8f5cf1221d3cf016a4c65874}{start\+Animation} ()
+\begin{DoxyCompactList}\small\item\em Start the sprite slideshow. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sprite_a7fc484c57aa07b95311eacf27d789a0c}\label{class_sprite_a7fc484c57aa07b95311eacf27d789a0c}} 
+void \hyperlink{class_sprite_a7fc484c57aa07b95311eacf27d789a0c}{stop\+Animation} ()
+\begin{DoxyCompactList}\small\item\em Stop the sprite slideshow. \end{DoxyCompactList}\item 
+bool \hyperlink{class_sprite_aaf6364fea1ba44d95134a34ebd449c6b}{animation\+Active} () const
+\begin{DoxyCompactList}\small\item\em Indicates if the animation is already active. \end{DoxyCompactList}\item 
+bool \hyperlink{class_sprite_aa43fae53d9d60a1d86096b781135f380}{in\+Loop} () const
+\begin{DoxyCompactList}\small\item\em Return in\+Loop indicator. \end{DoxyCompactList}\item 
+void \hyperlink{class_sprite_a37869d23b6c3884f6ff856680e2c2e30}{set\+Loop} (bool b)
+\begin{DoxyCompactList}\small\item\em Set in\+Loop indicator. \end{DoxyCompactList}\item 
+int \hyperlink{class_sprite_a90bbd615de28db60579c4d09e2bb3f39}{ticker\+Interval} () const
+\begin{DoxyCompactList}\small\item\em Get slideshow timer interval. \end{DoxyCompactList}\item 
+void \hyperlink{class_sprite_af46f090f361ddf8fe868091be338d2a8}{set\+Ticker\+Interval} (int ms)
+\begin{DoxyCompactList}\small\item\em Set slideshow timer interval. \end{DoxyCompactList}\item 
+Q\+Pixmap \hyperlink{class_sprite_a01919084b25446f54dc120264d1715db}{next\+Frame} () const
+\begin{DoxyCompactList}\small\item\em Get the next animation frame. \end{DoxyCompactList}\item 
+void \hyperlink{class_sprite_a166d1759639fa16f0577f3257bdd2bb8}{add\+Frame} (const Q\+String \&frame)
+\begin{DoxyCompactList}\small\item\em Add a frame to the slideshow. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An class representing collections of images used for the animations. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sprite_a166d1759639fa16f0577f3257bdd2bb8}\label{class_sprite_a166d1759639fa16f0577f3257bdd2bb8}} 
+\index{Sprite@{Sprite}!add\+Frame@{add\+Frame}}
+\index{add\+Frame@{add\+Frame}!Sprite@{Sprite}}
+\subsubsection{\texorpdfstring{add\+Frame()}{addFrame()}}
+{\footnotesize\ttfamily void Sprite\+::add\+Frame (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{frame }\end{DoxyParamCaption})}
+
+
+
+Add a frame to the slideshow. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frame} & Frame to add \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sprite_aaf6364fea1ba44d95134a34ebd449c6b}\label{class_sprite_aaf6364fea1ba44d95134a34ebd449c6b}} 
+\index{Sprite@{Sprite}!animation\+Active@{animation\+Active}}
+\index{animation\+Active@{animation\+Active}!Sprite@{Sprite}}
+\subsubsection{\texorpdfstring{animation\+Active()}{animationActive()}}
+{\footnotesize\ttfamily bool Sprite\+::animation\+Active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Indicates if the animation is already active. 
+
+\begin{DoxyReturn}{Returns}
+Animation running indicator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sprite_aa43fae53d9d60a1d86096b781135f380}\label{class_sprite_aa43fae53d9d60a1d86096b781135f380}} 
+\index{Sprite@{Sprite}!in\+Loop@{in\+Loop}}
+\index{in\+Loop@{in\+Loop}!Sprite@{Sprite}}
+\subsubsection{\texorpdfstring{in\+Loop()}{inLoop()}}
+{\footnotesize\ttfamily bool Sprite\+::in\+Loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Return in\+Loop indicator. 
+
+\begin{DoxyReturn}{Returns}
+in\+Loop indicator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sprite_a01919084b25446f54dc120264d1715db}\label{class_sprite_a01919084b25446f54dc120264d1715db}} 
+\index{Sprite@{Sprite}!next\+Frame@{next\+Frame}}
+\index{next\+Frame@{next\+Frame}!Sprite@{Sprite}}
+\subsubsection{\texorpdfstring{next\+Frame()}{nextFrame()}}
+{\footnotesize\ttfamily Q\+Pixmap Sprite\+::next\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the next animation frame. 
+
+\begin{DoxyReturn}{Returns}
+Next frame 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sprite_a37869d23b6c3884f6ff856680e2c2e30}\label{class_sprite_a37869d23b6c3884f6ff856680e2c2e30}} 
+\index{Sprite@{Sprite}!set\+Loop@{set\+Loop}}
+\index{set\+Loop@{set\+Loop}!Sprite@{Sprite}}
+\subsubsection{\texorpdfstring{set\+Loop()}{setLoop()}}
+{\footnotesize\ttfamily void Sprite\+::set\+Loop (\begin{DoxyParamCaption}\item[{bool}]{b }\end{DoxyParamCaption})}
+
+
+
+Set in\+Loop indicator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & New in\+Loop value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sprite_af46f090f361ddf8fe868091be338d2a8}\label{class_sprite_af46f090f361ddf8fe868091be338d2a8}} 
+\index{Sprite@{Sprite}!set\+Ticker\+Interval@{set\+Ticker\+Interval}}
+\index{set\+Ticker\+Interval@{set\+Ticker\+Interval}!Sprite@{Sprite}}
+\subsubsection{\texorpdfstring{set\+Ticker\+Interval()}{setTickerInterval()}}
+{\footnotesize\ttfamily void Sprite\+::set\+Ticker\+Interval (\begin{DoxyParamCaption}\item[{int}]{ms }\end{DoxyParamCaption})}
+
+
+
+Set slideshow timer interval. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ms} & New interval value in ms \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sprite_a90bbd615de28db60579c4d09e2bb3f39}\label{class_sprite_a90bbd615de28db60579c4d09e2bb3f39}} 
+\index{Sprite@{Sprite}!ticker\+Interval@{ticker\+Interval}}
+\index{ticker\+Interval@{ticker\+Interval}!Sprite@{Sprite}}
+\subsubsection{\texorpdfstring{ticker\+Interval()}{tickerInterval()}}
+{\footnotesize\ttfamily int Sprite\+::ticker\+Interval (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get slideshow timer interval. 
+
+\begin{DoxyReturn}{Returns}
+Timer interval 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/sprite.\+h\item 
+src/sprite.\+cpp\end{DoxyCompactItemize}

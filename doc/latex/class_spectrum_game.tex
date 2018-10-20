@@ -1,0 +1,211 @@
+\hypertarget{class_spectrum_game}{}\section{Spectrum\+Game Class Reference}
+\label{class_spectrum_game}\index{Spectrum\+Game@{Spectrum\+Game}}
+
+
+The main game class.  
+
+
+
+
+{\ttfamily \#include $<$game.\+h$>$}
+
+Inheritance diagram for Spectrum\+Game\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_spectrum_game}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_spectrum_game_ac410e5206f57c99ee344d63946c66879}{Spectrum\+Game} (Q\+Graphics\+View $\ast$parent)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_spectrum_game}{Spectrum\+Game} constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_spectrum_game_aaab011291c3d820074b5e2297520164c}\label{class_spectrum_game_aaab011291c3d820074b5e2297520164c}} 
+{\bfseries Spectrum\+Game} (const \hyperlink{class_spectrum_game}{Spectrum\+Game} \&)=delete
+\item 
+\mbox{\Hypertarget{class_spectrum_game_ae12bcb6a32a5333ca8ecde86f7934b8c}\label{class_spectrum_game_ae12bcb6a32a5333ca8ecde86f7934b8c}} 
+\hyperlink{class_spectrum_game}{Spectrum\+Game} \& {\bfseries operator=} (const \hyperlink{class_spectrum_game}{Spectrum\+Game} \&)=delete
+\item 
+void \hyperlink{class_spectrum_game_aaad553200f65a101e4f6b499385b4b84}{load\+Level} (const Q\+String id)
+\begin{DoxyCompactList}\small\item\em Loads a new level based on the level name. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_spectrum_game_a4b01f375f8445c13925bc47561290eaa}\label{class_spectrum_game_a4b01f375f8445c13925bc47561290eaa}} 
+void \hyperlink{class_spectrum_game_a4b01f375f8445c13925bc47561290eaa}{pause} ()
+\begin{DoxyCompactList}\small\item\em Pauses the game. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_spectrum_game_a8de2864027d73ab1616e272e96f94ccf}\label{class_spectrum_game_a8de2864027d73ab1616e272e96f94ccf}} 
+void \hyperlink{class_spectrum_game_a8de2864027d73ab1616e272e96f94ccf}{resume} ()
+\begin{DoxyCompactList}\small\item\em Resumes the game. \end{DoxyCompactList}\item 
+void \hyperlink{class_spectrum_game_a46b514f657f13b2c4fa20402a4e44c72}{load} (Q\+String \&file\+Name)
+\begin{DoxyCompactList}\small\item\em Loads a game from the save file. \end{DoxyCompactList}\item 
+void \hyperlink{class_spectrum_game_a55bb099940b204796a5f406b3a69de79}{save} (Q\+String \&file\+Name) const
+\begin{DoxyCompactList}\small\item\em Save a game to a file. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_spectrum_game_a479951533ca641e0da457e1403212829}\label{class_spectrum_game_a479951533ca641e0da457e1403212829}} 
+void \hyperlink{class_spectrum_game_a479951533ca641e0da457e1403212829}{interact} ()
+\begin{DoxyCompactList}\small\item\em Handles the interaction of a player and objects on the scene. \end{DoxyCompactList}\item 
+Q\+Color \hyperlink{class_spectrum_game_a8c40ad9ead765c9d5be4ef716edf6cd4}{active\+Color} () const
+\begin{DoxyCompactList}\small\item\em Get current active color. \end{DoxyCompactList}\item 
+void \hyperlink{class_spectrum_game_a59123ee548a9d6fb476e7c511e7f497a}{set\+Active\+Color} (Q\+Color new\+Active\+Color)
+\begin{DoxyCompactList}\small\item\em Sets a new active color. \end{DoxyCompactList}\item 
+bool \hyperlink{class_spectrum_game_a0b95f601a2eb6a31baf10b6d37e38a2c}{is\+Unlocked} (const Q\+Color \&color) const
+\begin{DoxyCompactList}\small\item\em Check if the color is unlocked. \end{DoxyCompactList}\item 
+bool \hyperlink{class_spectrum_game_a36ec9500dcbb54607fdd667c2ee796ed}{is\+Unlocked} (int color\+ID) const
+\begin{DoxyCompactList}\small\item\em Check if the color is unlocked. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_spectrum_game_af84cd40c3c89f89115ae0879e43aed00}\label{class_spectrum_game_af84cd40c3c89f89115ae0879e43aed00}} 
+void {\bfseries key\+Press\+Event} (Q\+Key\+Event $\ast$event) override
+\item 
+\mbox{\Hypertarget{class_spectrum_game_ac239ec6f01c0de472b4145b7d7e0c82e}\label{class_spectrum_game_ac239ec6f01c0de472b4145b7d7e0c82e}} 
+void {\bfseries key\+Release\+Event} (Q\+Key\+Event $\ast$event) override
+\item 
+\mbox{\Hypertarget{class_spectrum_game_a7e9836562910f72d5884429afe8e6655}\label{class_spectrum_game_a7e9836562910f72d5884429afe8e6655}} 
+void {\bfseries mouse\+Press\+Event} (Q\+Graphics\+Scene\+Mouse\+Event $\ast$event) override
+\item 
+\mbox{\Hypertarget{class_spectrum_game_aa13f5986e9297c57d523818c28ddf68a}\label{class_spectrum_game_aa13f5986e9297c57d523818c28ddf68a}} 
+void {\bfseries mouse\+Release\+Event} (Q\+Graphics\+Scene\+Mouse\+Event $\ast$event) override
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The main game class. 
+
+\hyperlink{class_spectrum_game}{Spectrum\+Game} class is derived from Q\+Graphics\+Scene, so entities (Q\+Graphics\+Objects) can be added to it (or removed).
+
+\hyperlink{class_spectrum_game}{Spectrum\+Game} class has the following functionalities\+:
+\begin{DoxyItemize}
+\item Handles level creation has control over the entities in the level
+\item Handles the keyboard/mouse events
+\item Updates the entities and level on each tick 
+\end{DoxyItemize}
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_spectrum_game_ac410e5206f57c99ee344d63946c66879}\label{class_spectrum_game_ac410e5206f57c99ee344d63946c66879}} 
+\index{Spectrum\+Game@{Spectrum\+Game}!Spectrum\+Game@{Spectrum\+Game}}
+\index{Spectrum\+Game@{Spectrum\+Game}!Spectrum\+Game@{Spectrum\+Game}}
+\subsubsection{\texorpdfstring{Spectrum\+Game()}{SpectrumGame()}}
+{\footnotesize\ttfamily Spectrum\+Game\+::\+Spectrum\+Game (\begin{DoxyParamCaption}\item[{Q\+Graphics\+View $\ast$}]{parent }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{class_spectrum_game}{Spectrum\+Game} constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & The view represeting the scene \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_spectrum_game_a8c40ad9ead765c9d5be4ef716edf6cd4}\label{class_spectrum_game_a8c40ad9ead765c9d5be4ef716edf6cd4}} 
+\index{Spectrum\+Game@{Spectrum\+Game}!active\+Color@{active\+Color}}
+\index{active\+Color@{active\+Color}!Spectrum\+Game@{Spectrum\+Game}}
+\subsubsection{\texorpdfstring{active\+Color()}{activeColor()}}
+{\footnotesize\ttfamily Q\+Color Spectrum\+Game\+::active\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get current active color. 
+
+\begin{DoxyReturn}{Returns}
+Current active color 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_spectrum_game_a0b95f601a2eb6a31baf10b6d37e38a2c}\label{class_spectrum_game_a0b95f601a2eb6a31baf10b6d37e38a2c}} 
+\index{Spectrum\+Game@{Spectrum\+Game}!is\+Unlocked@{is\+Unlocked}}
+\index{is\+Unlocked@{is\+Unlocked}!Spectrum\+Game@{Spectrum\+Game}}
+\subsubsection{\texorpdfstring{is\+Unlocked()}{isUnlocked()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Spectrum\+Game\+::is\+Unlocked (\begin{DoxyParamCaption}\item[{const Q\+Color \&}]{color }\end{DoxyParamCaption}) const}
+
+
+
+Check if the color is unlocked. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & Q\+Color object containing color properties \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Unlocked indicator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_spectrum_game_a36ec9500dcbb54607fdd667c2ee796ed}\label{class_spectrum_game_a36ec9500dcbb54607fdd667c2ee796ed}} 
+\index{Spectrum\+Game@{Spectrum\+Game}!is\+Unlocked@{is\+Unlocked}}
+\index{is\+Unlocked@{is\+Unlocked}!Spectrum\+Game@{Spectrum\+Game}}
+\subsubsection{\texorpdfstring{is\+Unlocked()}{isUnlocked()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Spectrum\+Game\+::is\+Unlocked (\begin{DoxyParamCaption}\item[{int}]{color\+ID }\end{DoxyParamCaption}) const}
+
+
+
+Check if the color is unlocked. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color\+ID} & ID of the color \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Unlocked indicator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_spectrum_game_a46b514f657f13b2c4fa20402a4e44c72}\label{class_spectrum_game_a46b514f657f13b2c4fa20402a4e44c72}} 
+\index{Spectrum\+Game@{Spectrum\+Game}!load@{load}}
+\index{load@{load}!Spectrum\+Game@{Spectrum\+Game}}
+\subsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily void Spectrum\+Game\+::load (\begin{DoxyParamCaption}\item[{Q\+String \&}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+Loads a game from the save file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & Save file name \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_spectrum_game_aaad553200f65a101e4f6b499385b4b84}\label{class_spectrum_game_aaad553200f65a101e4f6b499385b4b84}} 
+\index{Spectrum\+Game@{Spectrum\+Game}!load\+Level@{load\+Level}}
+\index{load\+Level@{load\+Level}!Spectrum\+Game@{Spectrum\+Game}}
+\subsubsection{\texorpdfstring{load\+Level()}{loadLevel()}}
+{\footnotesize\ttfamily void Spectrum\+Game\+::load\+Level (\begin{DoxyParamCaption}\item[{const Q\+String}]{id }\end{DoxyParamCaption})}
+
+
+
+Loads a new level based on the level name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & A string representing level name (for example 001.\+lvl) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_spectrum_game_a55bb099940b204796a5f406b3a69de79}\label{class_spectrum_game_a55bb099940b204796a5f406b3a69de79}} 
+\index{Spectrum\+Game@{Spectrum\+Game}!save@{save}}
+\index{save@{save}!Spectrum\+Game@{Spectrum\+Game}}
+\subsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily void Spectrum\+Game\+::save (\begin{DoxyParamCaption}\item[{Q\+String \&}]{file\+Name }\end{DoxyParamCaption}) const}
+
+
+
+Save a game to a file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & Output file name \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_spectrum_game_a59123ee548a9d6fb476e7c511e7f497a}\label{class_spectrum_game_a59123ee548a9d6fb476e7c511e7f497a}} 
+\index{Spectrum\+Game@{Spectrum\+Game}!set\+Active\+Color@{set\+Active\+Color}}
+\index{set\+Active\+Color@{set\+Active\+Color}!Spectrum\+Game@{Spectrum\+Game}}
+\subsubsection{\texorpdfstring{set\+Active\+Color()}{setActiveColor()}}
+{\footnotesize\ttfamily void Spectrum\+Game\+::set\+Active\+Color (\begin{DoxyParamCaption}\item[{Q\+Color}]{new\+Active\+Color }\end{DoxyParamCaption})}
+
+
+
+Sets a new active color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Active\+Color} & New active color \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/game.\+h\item 
+src/game.\+cpp\end{DoxyCompactItemize}

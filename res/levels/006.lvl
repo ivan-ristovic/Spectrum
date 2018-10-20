@@ -1,0 +1,86 @@
+N/A
+
+# Player spawn coordinates
+p 70 470
+
+
+#### Static entities ####
+
+#   Walls
+
+# Top
+s block 0 0 800 50
+# Bottom
+s block 0 550 800 50
+# Left side
+s block 0 50 50 500
+# Right side
+s block 750 50 50 500
+
+#   Walls
+# column 1
+c purple
+s wall 50 150 100 70
+# column 2
+c yellow
+d cube 180 80 70 70
+c red
+s wall 150 150 100 70
+c green
+s wall 150 350 100 100
+c red
+s wall 150 450 100 100
+# column 3
+c blue
+s wall 250 180 100 40
+c green
+s wall 250 350 100 100
+c red
+s wall 250 450 100 100
+# column 4
+c blue
+c green
+s wall 350 350 100 100
+c red
+s wall 350 450 100 100
+# column 5
+c green
+s wall 450 350 100 100
+c red
+s wall 450 500  50  50
+# column 6
+c green
+s wall 550 50 50 400
+#s wall 550 350 50 100
+# column 7
+c blue
+s wall 600 50 150 100
+c red
+s wall 720 250 30 30
+c blue
+s wall 720 320 30 30
+c blue
+s wall 720 320 30 30
+c blue
+s wall 600 370 30 30
+c red
+s wall 600 420 30 30
+#c blue
+#s wall 720 450 30 30
+c red
+s wall 720 500 30 30
+
+# Purple line
+c purple
+s wall 200 340 350 10
+s wall 50 400 50 10
+
+
+#   Door
+c red
+s door 70 450 005 75 270
+s door 70 50 007
+
+#   Unlocker
+c green
+s unlocker 645 80

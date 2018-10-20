@@ -1,0 +1,222 @@
+\hypertarget{class_dynamic_entity}{}\section{Dynamic\+Entity Class Reference}
+\label{class_dynamic_entity}\index{Dynamic\+Entity@{Dynamic\+Entity}}
+
+
+Provides a base for all entities that are moving on the scene.  
+
+
+
+
+{\ttfamily \#include $<$dynamicentity.\+h$>$}
+
+Inheritance diagram for Dynamic\+Entity\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_dynamic_entity}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_dynamic_entity_a7838d2a20f19bd50a855a6de55522b9d}{Dynamic\+Entity} (qreal x, qreal y, qreal \hyperlink{class_entity_a351a26475f8c124429a638483e95fa8e}{w}, qreal \hyperlink{class_entity_a639fea375adab80851778acb51757fb8}{h}, qreal mass, const Q\+Color \hyperlink{class_entity_ad14bf88ca550e2e5b13438a3faf545e6}{color}=Spectrum\+Colors\+::gray, bool \hyperlink{class_entity_a0d21d9ca00bc81494aec120c0840c191}{collidable}=true)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_dynamic_entity}{Dynamic\+Entity} constructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_dynamic_entity_a6bc80eeb1cd3d329233eb9582a99fea4}{set\+Vx} (qreal vx)
+\begin{DoxyCompactList}\small\item\em Set the speed vector X value. \end{DoxyCompactList}\item 
+void \hyperlink{class_dynamic_entity_a8b4604ccca578bc4a20a18333b498c0a}{set\+Vy} (qreal vy)
+\begin{DoxyCompactList}\small\item\em Set the speed vector Y value. \end{DoxyCompactList}\item 
+void \hyperlink{class_dynamic_entity_a556f50037ce6eb99cd7d1498242e1e85}{set\+Ch} (double c)
+\begin{DoxyCompactList}\small\item\em Set \char`\"{}changed\char`\"{}. \end{DoxyCompactList}\item 
+double \hyperlink{class_dynamic_entity_acb49f1128f7ddc9b3c531c8c2187d97f}{get\+Ch} () const
+\begin{DoxyCompactList}\small\item\em Get \char`\"{}changed\char`\"{} value. \end{DoxyCompactList}\item 
+double \hyperlink{class_dynamic_entity_a31d63938cbf1108662af89abb31627cb}{get\+Mass} () const
+\begin{DoxyCompactList}\small\item\em Get entity mass. \end{DoxyCompactList}\item 
+void \hyperlink{class_dynamic_entity_abc03ef71bd387e232fbcd3e35f9f634d}{apply\+Force} (qreal fx, qreal fy)
+\begin{DoxyCompactList}\small\item\em Apply the force on the entity, given as a vector. \end{DoxyCompactList}\item 
+void \hyperlink{class_dynamic_entity_ac9d7063f7165c9dc9a050361d9d9ebae}{apply\+Gravity} (qreal g)
+\begin{DoxyCompactList}\small\item\em Apply gravity on the entity. \end{DoxyCompactList}\item 
+void \hyperlink{class_dynamic_entity_aed1bbf1428250f9db5b8b141edf5ba50}{move} (int id)
+\begin{DoxyCompactList}\small\item\em Moving logic of the entity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_dynamic_entity_ad3e9a2006ac1a488e7ddfe7bca09a77c}\label{class_dynamic_entity_ad3e9a2006ac1a488e7ddfe7bca09a77c}} 
+bool \hyperlink{class_dynamic_entity_ad3e9a2006ac1a488e7ddfe7bca09a77c}{\+\_\+in\+Air}
+\begin{DoxyCompactList}\small\item\em Determines whether the entity is in air. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_dynamic_entity_a28c8f427e535b66825c908671f3e8bf2}\label{class_dynamic_entity_a28c8f427e535b66825c908671f3e8bf2}} 
+qreal \hyperlink{class_dynamic_entity_a28c8f427e535b66825c908671f3e8bf2}{\+\_\+mass}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_entity}{Entity} mass. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_dynamic_entity_ab8251cd7a23dc31ef6210761ef6964da}\label{class_dynamic_entity_ab8251cd7a23dc31ef6210761ef6964da}} 
+qreal \hyperlink{class_dynamic_entity_ab8251cd7a23dc31ef6210761ef6964da}{\+\_\+vx}
+\begin{DoxyCompactList}\small\item\em X speed component. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_dynamic_entity_ad2304e29b50422faeca0289d3aed5857}\label{class_dynamic_entity_ad2304e29b50422faeca0289d3aed5857}} 
+qreal \hyperlink{class_dynamic_entity_ad2304e29b50422faeca0289d3aed5857}{\+\_\+vy}
+\begin{DoxyCompactList}\small\item\em Y speed component. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_dynamic_entity_a2b2463df5558ee7e071382027b5caa51}\label{class_dynamic_entity_a2b2463df5558ee7e071382027b5caa51}} 
+double \hyperlink{class_dynamic_entity_a2b2463df5558ee7e071382027b5caa51}{\+\_\+ch}
+\begin{DoxyCompactList}\small\item\em \char`\"{}changed\char`\"{} indicator \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Provides a base for all entities that are moving on the scene. 
+
+All classes derived from \hyperlink{class_dynamic_entity}{Dynamic\+Entity} are moving on the scene, hence they are affected by the gravity or player action.
+
+The moving logic is implemented in the \hyperlink{class_dynamic_entity_aed1bbf1428250f9db5b8b141edf5ba50}{move()} function.
+
+The mass is there because there is a chance to add entities which are unaffected by (or affected negatively) by gravity, such as helium baloons for example. For now, all items have same default mass of 1. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_dynamic_entity_a7838d2a20f19bd50a855a6de55522b9d}\label{class_dynamic_entity_a7838d2a20f19bd50a855a6de55522b9d}} 
+\index{Dynamic\+Entity@{Dynamic\+Entity}!Dynamic\+Entity@{Dynamic\+Entity}}
+\index{Dynamic\+Entity@{Dynamic\+Entity}!Dynamic\+Entity@{Dynamic\+Entity}}
+\subsubsection{\texorpdfstring{Dynamic\+Entity()}{DynamicEntity()}}
+{\footnotesize\ttfamily Dynamic\+Entity\+::\+Dynamic\+Entity (\begin{DoxyParamCaption}\item[{qreal}]{x,  }\item[{qreal}]{y,  }\item[{qreal}]{w,  }\item[{qreal}]{h,  }\item[{qreal}]{mass,  }\item[{const Q\+Color}]{color = {\ttfamily SpectrumColors\+:\+:gray},  }\item[{bool}]{collidable = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{class_dynamic_entity}{Dynamic\+Entity} constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & X position of the entity in the scene \\
+\hline
+{\em y} & Y position of the entity in the scene \\
+\hline
+{\em w} & Width \\
+\hline
+{\em h} & Height \\
+\hline
+{\em mass} & Mass \\
+\hline
+{\em color} & Color \\
+\hline
+{\em collidable} & Collidable indicator \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_dynamic_entity_abc03ef71bd387e232fbcd3e35f9f634d}\label{class_dynamic_entity_abc03ef71bd387e232fbcd3e35f9f634d}} 
+\index{Dynamic\+Entity@{Dynamic\+Entity}!apply\+Force@{apply\+Force}}
+\index{apply\+Force@{apply\+Force}!Dynamic\+Entity@{Dynamic\+Entity}}
+\subsubsection{\texorpdfstring{apply\+Force()}{applyForce()}}
+{\footnotesize\ttfamily void Dynamic\+Entity\+::apply\+Force (\begin{DoxyParamCaption}\item[{qreal}]{fx,  }\item[{qreal}]{fy }\end{DoxyParamCaption})}
+
+
+
+Apply the force on the entity, given as a vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fx} & Force X component \\
+\hline
+{\em fy} & Force Y component \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_dynamic_entity_ac9d7063f7165c9dc9a050361d9d9ebae}\label{class_dynamic_entity_ac9d7063f7165c9dc9a050361d9d9ebae}} 
+\index{Dynamic\+Entity@{Dynamic\+Entity}!apply\+Gravity@{apply\+Gravity}}
+\index{apply\+Gravity@{apply\+Gravity}!Dynamic\+Entity@{Dynamic\+Entity}}
+\subsubsection{\texorpdfstring{apply\+Gravity()}{applyGravity()}}
+{\footnotesize\ttfamily void Dynamic\+Entity\+::apply\+Gravity (\begin{DoxyParamCaption}\item[{qreal}]{g }\end{DoxyParamCaption})}
+
+
+
+Apply gravity on the entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & Gravity coefficient \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_dynamic_entity_acb49f1128f7ddc9b3c531c8c2187d97f}\label{class_dynamic_entity_acb49f1128f7ddc9b3c531c8c2187d97f}} 
+\index{Dynamic\+Entity@{Dynamic\+Entity}!get\+Ch@{get\+Ch}}
+\index{get\+Ch@{get\+Ch}!Dynamic\+Entity@{Dynamic\+Entity}}
+\subsubsection{\texorpdfstring{get\+Ch()}{getCh()}}
+{\footnotesize\ttfamily double Dynamic\+Entity\+::get\+Ch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get \char`\"{}changed\char`\"{} value. 
+
+\begin{DoxyReturn}{Returns}
+\char`\"{}changed\char`\"{} value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_dynamic_entity_a31d63938cbf1108662af89abb31627cb}\label{class_dynamic_entity_a31d63938cbf1108662af89abb31627cb}} 
+\index{Dynamic\+Entity@{Dynamic\+Entity}!get\+Mass@{get\+Mass}}
+\index{get\+Mass@{get\+Mass}!Dynamic\+Entity@{Dynamic\+Entity}}
+\subsubsection{\texorpdfstring{get\+Mass()}{getMass()}}
+{\footnotesize\ttfamily double Dynamic\+Entity\+::get\+Mass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get entity mass. 
+
+\begin{DoxyReturn}{Returns}
+Mass 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_dynamic_entity_aed1bbf1428250f9db5b8b141edf5ba50}\label{class_dynamic_entity_aed1bbf1428250f9db5b8b141edf5ba50}} 
+\index{Dynamic\+Entity@{Dynamic\+Entity}!move@{move}}
+\index{move@{move}!Dynamic\+Entity@{Dynamic\+Entity}}
+\subsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Dynamic\+Entity\+::move (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Moving logic of the entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Move value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_dynamic_entity_a556f50037ce6eb99cd7d1498242e1e85}\label{class_dynamic_entity_a556f50037ce6eb99cd7d1498242e1e85}} 
+\index{Dynamic\+Entity@{Dynamic\+Entity}!set\+Ch@{set\+Ch}}
+\index{set\+Ch@{set\+Ch}!Dynamic\+Entity@{Dynamic\+Entity}}
+\subsubsection{\texorpdfstring{set\+Ch()}{setCh()}}
+{\footnotesize\ttfamily void Dynamic\+Entity\+::set\+Ch (\begin{DoxyParamCaption}\item[{double}]{c }\end{DoxyParamCaption})}
+
+
+
+Set \char`\"{}changed\char`\"{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & New \char`\"{}changed\char`\"{} value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_dynamic_entity_a6bc80eeb1cd3d329233eb9582a99fea4}\label{class_dynamic_entity_a6bc80eeb1cd3d329233eb9582a99fea4}} 
+\index{Dynamic\+Entity@{Dynamic\+Entity}!set\+Vx@{set\+Vx}}
+\index{set\+Vx@{set\+Vx}!Dynamic\+Entity@{Dynamic\+Entity}}
+\subsubsection{\texorpdfstring{set\+Vx()}{setVx()}}
+{\footnotesize\ttfamily void Dynamic\+Entity\+::set\+Vx (\begin{DoxyParamCaption}\item[{qreal}]{vx }\end{DoxyParamCaption})}
+
+
+
+Set the speed vector X value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vx} & New vx value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_dynamic_entity_a8b4604ccca578bc4a20a18333b498c0a}\label{class_dynamic_entity_a8b4604ccca578bc4a20a18333b498c0a}} 
+\index{Dynamic\+Entity@{Dynamic\+Entity}!set\+Vy@{set\+Vy}}
+\index{set\+Vy@{set\+Vy}!Dynamic\+Entity@{Dynamic\+Entity}}
+\subsubsection{\texorpdfstring{set\+Vy()}{setVy()}}
+{\footnotesize\ttfamily void Dynamic\+Entity\+::set\+Vy (\begin{DoxyParamCaption}\item[{qreal}]{vy }\end{DoxyParamCaption})}
+
+
+
+Set the speed vector Y value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vy} & New vy value \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/dynamicentity.\+h\item 
+src/dynamicentity.\+cpp\end{DoxyCompactItemize}

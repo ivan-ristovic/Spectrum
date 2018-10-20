@@ -1,0 +1,47 @@
+N/A
+
+# Player spawn coordinates
+p 170 470
+
+
+#### Static entities ####
+
+
+#   Boundary
+# Top
+s block 0 0 800 50
+# Bottom
+s block 0 550 800 50
+# Left side
+s block 0 50 50 500
+# Right side
+s block 750 50 50 500
+
+#   "(Nicolas) Cage"
+s block 500 250 20 300
+s block 600 250 150 20
+c blue
+s wall 520 250 80 20
+
+#   Platform
+c red
+s wall 50 200 100 20
+
+
+#   Ladder
+c blue
+s ladder 450 200 50 150
+c green
+s ladder 520 250 50 250
+
+
+#   Door
+c yellow
+s door 170 450 008 170 420
+c green
+s door 620 450 010
+
+
+#### Dynamic entities ####
+c green
+d cube 75 130 70 70

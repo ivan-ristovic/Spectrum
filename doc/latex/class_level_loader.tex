@@ -1,0 +1,91 @@
+\hypertarget{class_level_loader}{}\section{Level\+Loader Class Reference}
+\label{class_level_loader}\index{Level\+Loader@{Level\+Loader}}
+
+
+Loads a level from the level file.  
+
+
+
+
+{\ttfamily \#include $<$levelloader.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_level_loader_a9d60ff2b46a0dea2d4fc0859cb4e2f41}{Level\+Loader} (const Q\+String \&file\+Name)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_level_loader}{Level\+Loader} constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_level_loader_ad669d7334fbc2c05117237a30076ac8c}\label{class_level_loader_ad669d7334fbc2c05117237a30076ac8c}} 
+{\bfseries Level\+Loader} (const \hyperlink{class_level_loader}{Level\+Loader} \&)=delete
+\item 
+\mbox{\Hypertarget{class_level_loader_a64bc158c24f9f0e7138bb9c1e23977ce}\label{class_level_loader_a64bc158c24f9f0e7138bb9c1e23977ce}} 
+\hyperlink{class_level_loader}{Level\+Loader} \& {\bfseries operator=} (const \hyperlink{class_level_loader}{Level\+Loader} \&)=delete
+\item 
+void \hyperlink{class_level_loader_a9c372fd7727713be65ce519759717df2}{parse} (\hyperlink{class_player}{Player} \&player, Q\+Color $\ast$active\+Color, std\+::vector$<$ \hyperlink{class_entity}{Entity} $\ast$$>$ \&static\+Entities, std\+::vector$<$ \hyperlink{class_dynamic_entity}{Dynamic\+Entity} $\ast$$>$ \&dynamic\+Entities) const
+\begin{DoxyCompactList}\small\item\em Parse level file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Loads a level from the level file. 
+
+\hyperlink{class_level}{Level} files are a way to store the level information. During each loading of a new level, the appropriate file is opened and parsed. \hyperlink{class_level}{Level} names are in the format\+: \char`\"{}\%3d.\+lvl\char`\"{} , level\+\_\+id
+
+\hyperlink{class_level}{Level} files start with the active color in the level.
+
+Each line that is starting with \textquotesingle{}\#\textquotesingle{} is considered as a comment.
+
+At the begining of each line, there is a character which determines the function\+:
+\begin{DoxyItemize}
+\item c $<$color name$>$=\char`\"{}\char`\"{}$>$ \+: change color
+\item p $<$x$>$ $<$y$>$ \+: set player coordinates
+\item s $<$name$>$ \mbox{[}position + additional info\mbox{]} \+: add static entity (color is inherited from \textquotesingle{}c\textquotesingle{} command)
+\item d $<$name$>$ \mbox{[}position + additional info\mbox{]} \+: add dynamic entity (color is inherited from \textquotesingle{}c\textquotesingle{} command)
+\end{DoxyItemize}
+
+Read the R\+E\+A\+D\+ME file in /res/levels for more information. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_level_loader_a9d60ff2b46a0dea2d4fc0859cb4e2f41}\label{class_level_loader_a9d60ff2b46a0dea2d4fc0859cb4e2f41}} 
+\index{Level\+Loader@{Level\+Loader}!Level\+Loader@{Level\+Loader}}
+\index{Level\+Loader@{Level\+Loader}!Level\+Loader@{Level\+Loader}}
+\subsubsection{\texorpdfstring{Level\+Loader()}{LevelLoader()}}
+{\footnotesize\ttfamily Level\+Loader\+::\+Level\+Loader (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{class_level_loader}{Level\+Loader} constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & \hyperlink{class_level}{Level} file name \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_level_loader_a9c372fd7727713be65ce519759717df2}\label{class_level_loader_a9c372fd7727713be65ce519759717df2}} 
+\index{Level\+Loader@{Level\+Loader}!parse@{parse}}
+\index{parse@{parse}!Level\+Loader@{Level\+Loader}}
+\subsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily void Level\+Loader\+::parse (\begin{DoxyParamCaption}\item[{\hyperlink{class_player}{Player} \&}]{player,  }\item[{Q\+Color $\ast$}]{active\+Color,  }\item[{std\+::vector$<$ \hyperlink{class_entity}{Entity} $\ast$$>$ \&}]{static\+Entities,  }\item[{std\+::vector$<$ \hyperlink{class_dynamic_entity}{Dynamic\+Entity} $\ast$$>$ \&}]{dynamic\+Entities }\end{DoxyParamCaption}) const}
+
+
+
+Parse level file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & \hyperlink{class_player}{Player} reference (to set location) \\
+\hline
+{\em active\+Color} & Active color pointer (to set it if the level says so) \\
+\hline
+{\em static\+Entities} & Pointer to static entity vector (to add entities) \\
+\hline
+{\em dynamic\+Entities} & Pointer to dynamic entity vector (to add entities) \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/levelloader.\+h\item 
+src/levelloader.\+cpp\end{DoxyCompactItemize}

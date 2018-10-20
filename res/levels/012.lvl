@@ -1,0 +1,33 @@
+N/A
+
+# Player spawn coordinates
+p 60 470
+
+
+#### Static entities ####
+
+#   Border
+
+# Bottom
+s block 0 550 800 50
+# Left side
+s block 0 0 20 550
+# Right side
+s block 780 0 20 550
+
+#   Hill
+s block 150 480 500 70
+s block 200 410 400 70
+s block 250 340 300 70
+s block 300 270 200 70
+s block 350 200 100 70
+
+#   Unlocker
+c orange
+s unlocker 370 150
+
+#   Door
+c green
+s door 60 450 011 620 270
+c blue
+s door 680 450 014

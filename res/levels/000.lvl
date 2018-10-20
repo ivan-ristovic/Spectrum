@@ -1,0 +1,77 @@
+default
+
+# Player spawn coordinates
+p 60 500
+
+# Color unlocker test
+c purple
+s unlocker 500 500
+
+# Gravity Switcher test
+c red
+s gravswitcher 620 530
+
+s laser 50 75 0 200 right
+
+
+#### Static entities ####
+
+#   Walls
+c gray
+s block   0   0  20 600
+s block   0 580 800  20
+s block 780   0  20 600
+
+# Testing colors
+c orange
+s wall 500 70 50 50
+c purple
+s wall 560 70 50 50
+c purple
+s wall 650 70 50 50
+
+# Door and its key
+c purple
+#s door 130 150 key 670 20 ideal location of the key
+s door 130 150 001 key 700 370
+# Door without key
+c green
+s door 60 480 001
+
+#   Blocks and Walls
+c red
+s wall 150 530  50  50
+c blue
+s wall 280 500  50  80
+
+c yellow
+s block 280 300  50  50
+
+c blue
+s wall 400 480 150  50
+c green
+s wall 650 450 100  20
+c red
+s wall 650 420 100  20
+c gray
+s block 450 350  50  20
+
+c green
+s wall 400 390 150  50
+
+c red
+s wall  50 250 200  10
+
+
+# Ladders
+
+c yellow
+s ladder 650 70 30 350
+
+#### Dynamic entities ####
+c blue
+d cube 50 50 50
+c green
+d cube 200 50 70
+c red
+d cube 300 50 90

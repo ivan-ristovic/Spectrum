@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/gui">
+        <file>menu.png</file>
+        <file>lvltree.png</file>
+        <file>help.png</file>
+    </qresource>
+</RCC>

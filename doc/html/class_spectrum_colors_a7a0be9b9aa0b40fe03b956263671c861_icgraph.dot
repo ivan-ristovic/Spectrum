@@ -1,0 +1,11 @@
+digraph "SpectrumColors::getColorFromID"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="SpectrumColors::getColor\lFromID",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="ColorChooser::ColorChooser",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_color_chooser.html#ab12d2e0cc21b24e781898fd0a65efad6",tooltip="ColorChooser constructor. "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="SpectrumGame::save",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spectrum_game.html#a55bb099940b204796a5f406b3a69de79",tooltip="Save a game to a file. "];
+}

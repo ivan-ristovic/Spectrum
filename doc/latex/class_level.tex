@@ -1,0 +1,169 @@
+\hypertarget{class_level}{}\section{Level Class Reference}
+\label{class_level}\index{Level@{Level}}
+
+
+Stores all the information related to the current level.  
+
+
+
+
+{\ttfamily \#include $<$level.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_level_ae92fa1883989c6a0559d4ee8cd5f63e3}{Level} (const Q\+String \&\hyperlink{class_level_afa0e14e0f2233497373be981c5ffdfa8}{id}, \hyperlink{class_player}{Player} \&player, Q\+Color $\ast$active\+Color)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_level}{Level} constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_level_ae03636cc90bd5f178650bd366124cb1c}\label{class_level_ae03636cc90bd5f178650bd366124cb1c}} 
+{\bfseries Level} (const \hyperlink{class_level}{Level} \&)=delete
+\item 
+\mbox{\Hypertarget{class_level_acbd996c953d3e3436cafddbf476cdba0}\label{class_level_acbd996c953d3e3436cafddbf476cdba0}} 
+\hyperlink{class_level}{Level} \& {\bfseries operator=} (const \hyperlink{class_level}{Level} \&)=delete
+\item 
+void \hyperlink{class_level_a04991c68f0868041b33f376252010aef}{load} (Q\+Graphics\+Scene $\ast$scene) const
+\begin{DoxyCompactList}\small\item\em Add items to the scene. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{class_entity}{Entity} $\ast$ $>$ \hyperlink{class_level_a350978da950c180a22a8d108138a3eb8}{static\+Entities} () const
+\begin{DoxyCompactList}\small\item\em Get all static entities present in the level. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{class_dynamic_entity}{Dynamic\+Entity} $\ast$ $>$ \hyperlink{class_level_af2f9960227070d93bc3fb457267c8d9a}{dynamic\+Entities} () const
+\begin{DoxyCompactList}\small\item\em Get all dynamic entities present in the level. \end{DoxyCompactList}\item 
+unsigned \hyperlink{class_level_afa0e14e0f2233497373be981c5ffdfa8}{id} () const
+\begin{DoxyCompactList}\small\item\em Get level ID. \end{DoxyCompactList}\item 
+void \hyperlink{class_level_aeacba6d47f7b2ccadebed8cef3ea6695}{apply\+Gravity} (qreal g)
+\begin{DoxyCompactList}\small\item\em Applies gravity to all dynamic entities in the level. \end{DoxyCompactList}\item 
+void \hyperlink{class_level_a02c2ce88ee6a232d2e192b1ad2982b23}{remove\+Static\+Entity} (\hyperlink{class_entity}{Entity} $\ast$item)
+\begin{DoxyCompactList}\small\item\em Remove static entity from the level. \end{DoxyCompactList}\item 
+void \hyperlink{class_level_a55628d95ef5195f50afbb46c91b8ccdf}{remove\+Dynamic\+Entity} (\hyperlink{class_dynamic_entity}{Dynamic\+Entity} $\ast$item)
+\begin{DoxyCompactList}\small\item\em Remove dynamic entity from the level. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Stores all the information related to the current level. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_level_ae92fa1883989c6a0559d4ee8cd5f63e3}\label{class_level_ae92fa1883989c6a0559d4ee8cd5f63e3}} 
+\index{Level@{Level}!Level@{Level}}
+\index{Level@{Level}!Level@{Level}}
+\subsubsection{\texorpdfstring{Level()}{Level()}}
+{\footnotesize\ttfamily Level\+::\+Level (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{id,  }\item[{\hyperlink{class_player}{Player} \&}]{player,  }\item[{Q\+Color $\ast$}]{active\+Color }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{class_level}{Level} constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & ID of the level to load \\
+\hline
+{\em player} & \hyperlink{class_player}{Player} pointer (in order to change player location in the level) \\
+\hline
+{\em active\+Color} & Current active color (changed if the level is set to change active color) \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_level_aeacba6d47f7b2ccadebed8cef3ea6695}\label{class_level_aeacba6d47f7b2ccadebed8cef3ea6695}} 
+\index{Level@{Level}!apply\+Gravity@{apply\+Gravity}}
+\index{apply\+Gravity@{apply\+Gravity}!Level@{Level}}
+\subsubsection{\texorpdfstring{apply\+Gravity()}{applyGravity()}}
+{\footnotesize\ttfamily void Level\+::apply\+Gravity (\begin{DoxyParamCaption}\item[{qreal}]{g }\end{DoxyParamCaption})}
+
+
+
+Applies gravity to all dynamic entities in the level. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Gravity} & coefficient \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_level_af2f9960227070d93bc3fb457267c8d9a}\label{class_level_af2f9960227070d93bc3fb457267c8d9a}} 
+\index{Level@{Level}!dynamic\+Entities@{dynamic\+Entities}}
+\index{dynamic\+Entities@{dynamic\+Entities}!Level@{Level}}
+\subsubsection{\texorpdfstring{dynamic\+Entities()}{dynamicEntities()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_dynamic_entity}{Dynamic\+Entity} $\ast$ $>$ Level\+::dynamic\+Entities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get all dynamic entities present in the level. 
+
+\begin{DoxyReturn}{Returns}
+Dynamic entities vector 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_level_afa0e14e0f2233497373be981c5ffdfa8}\label{class_level_afa0e14e0f2233497373be981c5ffdfa8}} 
+\index{Level@{Level}!id@{id}}
+\index{id@{id}!Level@{Level}}
+\subsubsection{\texorpdfstring{id()}{id()}}
+{\footnotesize\ttfamily unsigned Level\+::id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get level ID. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_level}{Level} ID 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_level_a04991c68f0868041b33f376252010aef}\label{class_level_a04991c68f0868041b33f376252010aef}} 
+\index{Level@{Level}!load@{load}}
+\index{load@{load}!Level@{Level}}
+\subsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily void Level\+::load (\begin{DoxyParamCaption}\item[{Q\+Graphics\+Scene $\ast$}]{scene }\end{DoxyParamCaption}) const}
+
+
+
+Add items to the scene. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Scene} & where the items are added \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_level_a55628d95ef5195f50afbb46c91b8ccdf}\label{class_level_a55628d95ef5195f50afbb46c91b8ccdf}} 
+\index{Level@{Level}!remove\+Dynamic\+Entity@{remove\+Dynamic\+Entity}}
+\index{remove\+Dynamic\+Entity@{remove\+Dynamic\+Entity}!Level@{Level}}
+\subsubsection{\texorpdfstring{remove\+Dynamic\+Entity()}{removeDynamicEntity()}}
+{\footnotesize\ttfamily void Level\+::remove\+Dynamic\+Entity (\begin{DoxyParamCaption}\item[{\hyperlink{class_dynamic_entity}{Dynamic\+Entity} $\ast$}]{item }\end{DoxyParamCaption})}
+
+
+
+Remove dynamic entity from the level. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Pointer} & to dynamic entity to be removed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_level_a02c2ce88ee6a232d2e192b1ad2982b23}\label{class_level_a02c2ce88ee6a232d2e192b1ad2982b23}} 
+\index{Level@{Level}!remove\+Static\+Entity@{remove\+Static\+Entity}}
+\index{remove\+Static\+Entity@{remove\+Static\+Entity}!Level@{Level}}
+\subsubsection{\texorpdfstring{remove\+Static\+Entity()}{removeStaticEntity()}}
+{\footnotesize\ttfamily void Level\+::remove\+Static\+Entity (\begin{DoxyParamCaption}\item[{\hyperlink{class_entity}{Entity} $\ast$}]{item }\end{DoxyParamCaption})}
+
+
+
+Remove static entity from the level. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Pointer} & to entity to be removed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_level_a350978da950c180a22a8d108138a3eb8}\label{class_level_a350978da950c180a22a8d108138a3eb8}} 
+\index{Level@{Level}!static\+Entities@{static\+Entities}}
+\index{static\+Entities@{static\+Entities}!Level@{Level}}
+\subsubsection{\texorpdfstring{static\+Entities()}{staticEntities()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{class_entity}{Entity} $\ast$ $>$ Level\+::static\+Entities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get all static entities present in the level. 
+
+\begin{DoxyReturn}{Returns}
+Static entities vector 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/level.\+h\item 
+src/level.\+cpp\end{DoxyCompactItemize}

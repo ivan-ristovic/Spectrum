@@ -1,0 +1,36 @@
+green
+
+# Player spawn coordinates
+p 160 470
+
+
+#### Static entities ####
+
+#   Boundary
+# Top
+s block 0 0 800 100
+# Bottom
+s block 0 550 800 50
+# Left side
+s block 0 100 100 450
+# Right side
+s block 700 100 100 450
+
+#   Ladder
+c green
+s ladder 450 250 50 300
+
+#   Platform
+c green
+s wall 500 250 200 30
+
+#   Purple unlocker
+c purple
+s unlocker 530 200
+
+#   Door
+c yellow
+s door 160 450 011 620 470
+
+c purple
+s door 620 150 014 50 70

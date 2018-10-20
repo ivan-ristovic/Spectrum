@@ -1,0 +1,283 @@
+\hypertarget{class_player}{}\section{Player Class Reference}
+\label{class_player}\index{Player@{Player}}
+
+
+Pawn controlled by user.  
+
+
+
+
+{\ttfamily \#include $<$player.\+h$>$}
+
+Inheritance diagram for Player\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_player}
+\end{center}
+\end{figure}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_player_ae6adfe5de2cfa622d16e4e9358ea51ef}\label{class_player_ae6adfe5de2cfa622d16e4e9358ea51ef}} 
+void \hyperlink{class_player_ae6adfe5de2cfa622d16e4e9358ea51ef}{player\+Hit} ()
+\begin{DoxyCompactList}\small\item\em Emitted if the player has collision with a \char`\"{}deadly\char`\"{} entity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_player_a623f0a82827dbd74758a90cefe4123d2}{Player} (qreal x, qreal y)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_player}{Player} constructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_player_a5add9f5bf703663538a25234bdd93291}{set\+Jump} (bool b)
+\begin{DoxyCompactList}\small\item\em Set the jump indicator. \end{DoxyCompactList}\item 
+void \hyperlink{class_player_a19eb681affb69020b7b5638c435be08f}{set\+Left} (bool b)
+\begin{DoxyCompactList}\small\item\em Set left movement indicator. \end{DoxyCompactList}\item 
+void \hyperlink{class_player_ae6f8aeb9f247fa3cd5204a61ee491285}{set\+Right} (bool b)
+\begin{DoxyCompactList}\small\item\em Set right movement indicator. \end{DoxyCompactList}\item 
+void \hyperlink{class_player_a2a910876c4833690e05e50acfd2333a4}{set\+Up} (bool b)
+\begin{DoxyCompactList}\small\item\em Set up movement indicator. \end{DoxyCompactList}\item 
+void \hyperlink{class_player_a9a5e1acdaf939df0cde9b54d6a88e79d}{set\+Down} (bool b)
+\begin{DoxyCompactList}\small\item\em Set down movement indicator. \end{DoxyCompactList}\item 
+bool \hyperlink{class_player_a0a2bc2291e910c06bde3c6c9d4173cd1}{get\+Pull} ()
+\begin{DoxyCompactList}\small\item\em Get pull indicator value. \end{DoxyCompactList}\item 
+void \hyperlink{class_player_adaf6df1aae76fe8d425a9691c373747b}{set\+Pull} (bool b)
+\begin{DoxyCompactList}\small\item\em Set pull indicator. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_player_a27f69434c8c6a92087bb93c9a20e7bf8}\label{class_player_a27f69434c8c6a92087bb93c9a20e7bf8}} 
+void \hyperlink{class_player_a27f69434c8c6a92087bb93c9a20e7bf8}{initialize\+Blink\+Sprite} ()
+\begin{DoxyCompactList}\small\item\em Initialize images for the blinking animation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_player_aed4b62c68567c76f38951c8f12095300}\label{class_player_aed4b62c68567c76f38951c8f12095300}} 
+void \hyperlink{class_player_aed4b62c68567c76f38951c8f12095300}{initialize\+Jump\+Sprite} ()
+\begin{DoxyCompactList}\small\item\em Initialize images for the jumping animation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_player_ac7b8410bd815605cd049c91784dcdb69}\label{class_player_ac7b8410bd815605cd049c91784dcdb69}} 
+void \hyperlink{class_player_ac7b8410bd815605cd049c91784dcdb69}{initialize\+Walk\+Sprite} ()
+\begin{DoxyCompactList}\small\item\em Initialize images for the walking animation. \end{DoxyCompactList}\item 
+\hyperlink{class_sprite}{Sprite} \& \hyperlink{class_player_a8dd19a1c1f7d541853bb4d676f9f1014}{jump\+Sprite} ()
+\begin{DoxyCompactList}\small\item\em Get a jumping sprite reference. \end{DoxyCompactList}\item 
+\hyperlink{class_sprite}{Sprite} \& \hyperlink{class_player_a03facc6ecd237a274e74516cca4b173d}{walk\+Sprite} ()
+\begin{DoxyCompactList}\small\item\em Get a walking sprite reference. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_player_ab7370e82234a9a8b816a2c46214b9030}\label{class_player_ab7370e82234a9a8b816a2c46214b9030}} 
+void {\bfseries paint} (Q\+Painter $\ast$painter, const Q\+Style\+Option\+Graphics\+Item $\ast$option, Q\+Widget $\ast$widget) override
+\item 
+qreal \hyperlink{class_player_ac5fcb472ea5e7e2222c13e086ced0aa1}{centerX} () const override
+\begin{DoxyCompactList}\small\item\em Get X coordinate of the center in parent coordinate system. \end{DoxyCompactList}\item 
+qreal \hyperlink{class_player_ac67429e56fbd74495b4614b7b27ca5f6}{centerY} () const override
+\begin{DoxyCompactList}\small\item\em Get Y coordinate of the center in parent coordinate system. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_player_ae82e446dea8858501f28172ff141abf5}\label{class_player_ae82e446dea8858501f28172ff141abf5}} 
+void \hyperlink{class_player_ae82e446dea8858501f28172ff141abf5}{movement} ()
+\begin{DoxyCompactList}\small\item\em Handles the player movement. \end{DoxyCompactList}\item 
+bool \hyperlink{class_player_a8bd85eaca498fc1c6638dbe90e694db8}{go} ()
+\begin{DoxyCompactList}\small\item\em Handles the ladder movement. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_player_a70e21ca98281b7d72f105f2693113d7e}\label{class_player_a70e21ca98281b7d72f105f2693113d7e}} 
+void \hyperlink{class_player_a70e21ca98281b7d72f105f2693113d7e}{jump} ()
+\begin{DoxyCompactList}\small\item\em Handles the jumping. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Pawn controlled by user. 
+
+This is the only entity that can move using the keyboard.
+
+You can move around, jump, interact... Explore! 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_player_a623f0a82827dbd74758a90cefe4123d2}\label{class_player_a623f0a82827dbd74758a90cefe4123d2}} 
+\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\subsubsection{\texorpdfstring{Player()}{Player()}}
+{\footnotesize\ttfamily Player\+::\+Player (\begin{DoxyParamCaption}\item[{qreal}]{x,  }\item[{qreal}]{y }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{class_player}{Player} constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & X position of the player in the scene \\
+\hline
+{\em y} & Y position of the player in the scene \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_player_ac5fcb472ea5e7e2222c13e086ced0aa1}\label{class_player_ac5fcb472ea5e7e2222c13e086ced0aa1}} 
+\index{Player@{Player}!centerX@{centerX}}
+\index{centerX@{centerX}!Player@{Player}}
+\subsubsection{\texorpdfstring{center\+X()}{centerX()}}
+{\footnotesize\ttfamily qreal Player\+::centerX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get X coordinate of the center in parent coordinate system. 
+
+\begin{DoxyReturn}{Returns}
+X coordinate of the center 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_entity_aa404777579f858d2e4dd0c584c20c95a}{Entity}.
+
+\mbox{\Hypertarget{class_player_ac67429e56fbd74495b4614b7b27ca5f6}\label{class_player_ac67429e56fbd74495b4614b7b27ca5f6}} 
+\index{Player@{Player}!centerY@{centerY}}
+\index{centerY@{centerY}!Player@{Player}}
+\subsubsection{\texorpdfstring{center\+Y()}{centerY()}}
+{\footnotesize\ttfamily qreal Player\+::centerY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get Y coordinate of the center in parent coordinate system. 
+
+\begin{DoxyReturn}{Returns}
+Y coordinate of the center 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_entity_ac0af460a15e0d087d8fbbbe1e6f7dd95}{Entity}.
+
+\mbox{\Hypertarget{class_player_a0a2bc2291e910c06bde3c6c9d4173cd1}\label{class_player_a0a2bc2291e910c06bde3c6c9d4173cd1}} 
+\index{Player@{Player}!get\+Pull@{get\+Pull}}
+\index{get\+Pull@{get\+Pull}!Player@{Player}}
+\subsubsection{\texorpdfstring{get\+Pull()}{getPull()}}
+{\footnotesize\ttfamily bool Player\+::get\+Pull (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get pull indicator value. 
+
+\begin{DoxyReturn}{Returns}
+Pull indicator value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_player_a8bd85eaca498fc1c6638dbe90e694db8}\label{class_player_a8bd85eaca498fc1c6638dbe90e694db8}} 
+\index{Player@{Player}!go@{go}}
+\index{go@{go}!Player@{Player}}
+\subsubsection{\texorpdfstring{go()}{go()}}
+{\footnotesize\ttfamily bool Player\+::go (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Handles the ladder movement. 
+
+\begin{DoxyReturn}{Returns}
+??? 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_player_a8dd19a1c1f7d541853bb4d676f9f1014}\label{class_player_a8dd19a1c1f7d541853bb4d676f9f1014}} 
+\index{Player@{Player}!jump\+Sprite@{jump\+Sprite}}
+\index{jump\+Sprite@{jump\+Sprite}!Player@{Player}}
+\subsubsection{\texorpdfstring{jump\+Sprite()}{jumpSprite()}}
+{\footnotesize\ttfamily \hyperlink{class_sprite}{Sprite} \& Player\+::jump\+Sprite (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get a jumping sprite reference. 
+
+\begin{DoxyReturn}{Returns}
+Reference to a jumping sprite object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_player_a9a5e1acdaf939df0cde9b54d6a88e79d}\label{class_player_a9a5e1acdaf939df0cde9b54d6a88e79d}} 
+\index{Player@{Player}!set\+Down@{set\+Down}}
+\index{set\+Down@{set\+Down}!Player@{Player}}
+\subsubsection{\texorpdfstring{set\+Down()}{setDown()}}
+{\footnotesize\ttfamily void Player\+::set\+Down (\begin{DoxyParamCaption}\item[{bool}]{b }\end{DoxyParamCaption})}
+
+
+
+Set down movement indicator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & New indicator value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_player_a5add9f5bf703663538a25234bdd93291}\label{class_player_a5add9f5bf703663538a25234bdd93291}} 
+\index{Player@{Player}!set\+Jump@{set\+Jump}}
+\index{set\+Jump@{set\+Jump}!Player@{Player}}
+\subsubsection{\texorpdfstring{set\+Jump()}{setJump()}}
+{\footnotesize\ttfamily void Player\+::set\+Jump (\begin{DoxyParamCaption}\item[{bool}]{b }\end{DoxyParamCaption})}
+
+
+
+Set the jump indicator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & New indicator value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_player_a19eb681affb69020b7b5638c435be08f}\label{class_player_a19eb681affb69020b7b5638c435be08f}} 
+\index{Player@{Player}!set\+Left@{set\+Left}}
+\index{set\+Left@{set\+Left}!Player@{Player}}
+\subsubsection{\texorpdfstring{set\+Left()}{setLeft()}}
+{\footnotesize\ttfamily void Player\+::set\+Left (\begin{DoxyParamCaption}\item[{bool}]{b }\end{DoxyParamCaption})}
+
+
+
+Set left movement indicator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & New indicator value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_player_adaf6df1aae76fe8d425a9691c373747b}\label{class_player_adaf6df1aae76fe8d425a9691c373747b}} 
+\index{Player@{Player}!set\+Pull@{set\+Pull}}
+\index{set\+Pull@{set\+Pull}!Player@{Player}}
+\subsubsection{\texorpdfstring{set\+Pull()}{setPull()}}
+{\footnotesize\ttfamily void Player\+::set\+Pull (\begin{DoxyParamCaption}\item[{bool}]{b }\end{DoxyParamCaption})}
+
+
+
+Set pull indicator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & New indicator value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_player_ae6f8aeb9f247fa3cd5204a61ee491285}\label{class_player_ae6f8aeb9f247fa3cd5204a61ee491285}} 
+\index{Player@{Player}!set\+Right@{set\+Right}}
+\index{set\+Right@{set\+Right}!Player@{Player}}
+\subsubsection{\texorpdfstring{set\+Right()}{setRight()}}
+{\footnotesize\ttfamily void Player\+::set\+Right (\begin{DoxyParamCaption}\item[{bool}]{b }\end{DoxyParamCaption})}
+
+
+
+Set right movement indicator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & New indicator value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_player_a2a910876c4833690e05e50acfd2333a4}\label{class_player_a2a910876c4833690e05e50acfd2333a4}} 
+\index{Player@{Player}!set\+Up@{set\+Up}}
+\index{set\+Up@{set\+Up}!Player@{Player}}
+\subsubsection{\texorpdfstring{set\+Up()}{setUp()}}
+{\footnotesize\ttfamily void Player\+::set\+Up (\begin{DoxyParamCaption}\item[{bool}]{b }\end{DoxyParamCaption})}
+
+
+
+Set up movement indicator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & New indicator value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_player_a03facc6ecd237a274e74516cca4b173d}\label{class_player_a03facc6ecd237a274e74516cca4b173d}} 
+\index{Player@{Player}!walk\+Sprite@{walk\+Sprite}}
+\index{walk\+Sprite@{walk\+Sprite}!Player@{Player}}
+\subsubsection{\texorpdfstring{walk\+Sprite()}{walkSprite()}}
+{\footnotesize\ttfamily \hyperlink{class_sprite}{Sprite} \& Player\+::walk\+Sprite (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get a walking sprite reference. 
+
+\begin{DoxyReturn}{Returns}
+Reference to a walking sprite object 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/player.\+h\item 
+src/player.\+cpp\end{DoxyCompactItemize}

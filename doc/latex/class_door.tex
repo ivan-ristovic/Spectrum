@@ -1,0 +1,202 @@
+\hypertarget{class_door}{}\section{Door Class Reference}
+\label{class_door}\index{Door@{Door}}
+
+
+Passage to a new level.  
+
+
+
+
+{\ttfamily \#include $<$door.\+h$>$}
+
+Inheritance diagram for Door\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_door}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_door_a71aa016de294167ab3b49ffc34b96ae3}{Door} (qreal x, qreal y, const Q\+String \&\hyperlink{class_door_a2ed65424b864f28dc980205c38ebd1d9}{next\+Level}, const Q\+Color \hyperlink{class_entity_ad14bf88ca550e2e5b13438a3faf545e6}{color}=Spectrum\+Colors\+::gray, bool locked=false)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_door}{Door} constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_door_a067d41ca1562d3b808c0909e2642ade7}\label{class_door_a067d41ca1562d3b808c0909e2642ade7}} 
+void {\bfseries paint} (Q\+Painter $\ast$painter, const Q\+Style\+Option\+Graphics\+Item $\ast$option, Q\+Widget $\ast$widget) override
+\item 
+\mbox{\Hypertarget{class_door_a5cce5b5437aa1d7c9903d087939fb629}\label{class_door_a5cce5b5437aa1d7c9903d087939fb629}} 
+void \hyperlink{class_door_a5cce5b5437aa1d7c9903d087939fb629}{lock} ()
+\begin{DoxyCompactList}\small\item\em Lock the door. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_door_af3d28c72297ed05c0361fb705b3db47f}\label{class_door_af3d28c72297ed05c0361fb705b3db47f}} 
+void \hyperlink{class_door_af3d28c72297ed05c0361fb705b3db47f}{unlock} ()
+\begin{DoxyCompactList}\small\item\em Unlock the door. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_door_a2ed65424b864f28dc980205c38ebd1d9}{next\+Level} () const
+\begin{DoxyCompactList}\small\item\em Get the next level string. \end{DoxyCompactList}\item 
+bool \hyperlink{class_door_ab72060b0c9bbfa00dcc2f02952927dba}{is\+Locked} () const
+\begin{DoxyCompactList}\small\item\em Check if the door is locked. \end{DoxyCompactList}\item 
+bool \hyperlink{class_door_a5d65aee71d60f72cae37d085d19faa80}{changes\+Default\+Spawn} () const
+\begin{DoxyCompactList}\small\item\em Check if the doors change the current player spawn in the level. \end{DoxyCompactList}\item 
+void \hyperlink{class_door_a95fe6168b86f58e1a29a4ce40079afb0}{set\+Changes\+Default\+Spawn} (bool b)
+\begin{DoxyCompactList}\small\item\em Set the spawn change indicator. \end{DoxyCompactList}\item 
+int \hyperlink{class_door_af36a171c2f6e3fe7b21d2027ada4199f}{spawn\+AtX} () const
+\begin{DoxyCompactList}\small\item\em Get X position of spawn point. \end{DoxyCompactList}\item 
+int \hyperlink{class_door_a35f7940f9b52caad0bbf39d2054fd0a4}{spawn\+AtY} () const
+\begin{DoxyCompactList}\small\item\em Get Y position of spawn point. \end{DoxyCompactList}\item 
+void \hyperlink{class_door_ab527eafbfd4fc67d5a17f20169ff9883}{set\+Spawn\+AtX} (int x)
+\begin{DoxyCompactList}\small\item\em Set X position of spawn point. \end{DoxyCompactList}\item 
+void \hyperlink{class_door_ac4aad24a6a7125c8e2cd136d4e70d0cf}{set\+Spawn\+AtY} (int y)
+\begin{DoxyCompactList}\small\item\em Set Y position of spawn point. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Passage to a new level. 
+
+This entity acts as a portal between two levels.
+
+A door can be locked, and then it will require a \hyperlink{class_key}{Key} of the same color to unlock them. \hyperlink{class_player}{Player} unlocks the door by collecting the \hyperlink{class_key}{Key} entity.
+
+\hyperlink{class_player}{Player} can pass through a door by pressing E. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_door_a71aa016de294167ab3b49ffc34b96ae3}\label{class_door_a71aa016de294167ab3b49ffc34b96ae3}} 
+\index{Door@{Door}!Door@{Door}}
+\index{Door@{Door}!Door@{Door}}
+\subsubsection{\texorpdfstring{Door()}{Door()}}
+{\footnotesize\ttfamily Door\+::\+Door (\begin{DoxyParamCaption}\item[{qreal}]{x,  }\item[{qreal}]{y,  }\item[{const Q\+String \&}]{next\+Level,  }\item[{const Q\+Color}]{color = {\ttfamily SpectrumColors\+:\+:gray},  }\item[{bool}]{locked = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{class_door}{Door} constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & X position of the door in the scene \\
+\hline
+{\em y} & Y position of the door in the scene \\
+\hline
+{\em next\+Level} & A string representing the name of the level where the door leads \\
+\hline
+{\em color} & \hyperlink{class_door}{Door} color \\
+\hline
+{\em locked} & Indicates whether the door is locked \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_door_a5d65aee71d60f72cae37d085d19faa80}\label{class_door_a5d65aee71d60f72cae37d085d19faa80}} 
+\index{Door@{Door}!changes\+Default\+Spawn@{changes\+Default\+Spawn}}
+\index{changes\+Default\+Spawn@{changes\+Default\+Spawn}!Door@{Door}}
+\subsubsection{\texorpdfstring{changes\+Default\+Spawn()}{changesDefaultSpawn()}}
+{\footnotesize\ttfamily bool Door\+::changes\+Default\+Spawn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Check if the doors change the current player spawn in the level. 
+
+\begin{DoxyReturn}{Returns}
+Spawn change indicator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_door_ab72060b0c9bbfa00dcc2f02952927dba}\label{class_door_ab72060b0c9bbfa00dcc2f02952927dba}} 
+\index{Door@{Door}!is\+Locked@{is\+Locked}}
+\index{is\+Locked@{is\+Locked}!Door@{Door}}
+\subsubsection{\texorpdfstring{is\+Locked()}{isLocked()}}
+{\footnotesize\ttfamily bool Door\+::is\+Locked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Check if the door is locked. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_door}{Door} lock indicator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_door_a2ed65424b864f28dc980205c38ebd1d9}\label{class_door_a2ed65424b864f28dc980205c38ebd1d9}} 
+\index{Door@{Door}!next\+Level@{next\+Level}}
+\index{next\+Level@{next\+Level}!Door@{Door}}
+\subsubsection{\texorpdfstring{next\+Level()}{nextLevel()}}
+{\footnotesize\ttfamily Q\+String Door\+::next\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the next level string. 
+
+\begin{DoxyReturn}{Returns}
+String containing the name of the level where the doors lead 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_door_a95fe6168b86f58e1a29a4ce40079afb0}\label{class_door_a95fe6168b86f58e1a29a4ce40079afb0}} 
+\index{Door@{Door}!set\+Changes\+Default\+Spawn@{set\+Changes\+Default\+Spawn}}
+\index{set\+Changes\+Default\+Spawn@{set\+Changes\+Default\+Spawn}!Door@{Door}}
+\subsubsection{\texorpdfstring{set\+Changes\+Default\+Spawn()}{setChangesDefaultSpawn()}}
+{\footnotesize\ttfamily void Door\+::set\+Changes\+Default\+Spawn (\begin{DoxyParamCaption}\item[{bool}]{b }\end{DoxyParamCaption})}
+
+
+
+Set the spawn change indicator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & New spawn change indicator value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_door_ab527eafbfd4fc67d5a17f20169ff9883}\label{class_door_ab527eafbfd4fc67d5a17f20169ff9883}} 
+\index{Door@{Door}!set\+Spawn\+AtX@{set\+Spawn\+AtX}}
+\index{set\+Spawn\+AtX@{set\+Spawn\+AtX}!Door@{Door}}
+\subsubsection{\texorpdfstring{set\+Spawn\+At\+X()}{setSpawnAtX()}}
+{\footnotesize\ttfamily void Door\+::set\+Spawn\+AtX (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})}
+
+
+
+Set X position of spawn point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & New X position value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_door_ac4aad24a6a7125c8e2cd136d4e70d0cf}\label{class_door_ac4aad24a6a7125c8e2cd136d4e70d0cf}} 
+\index{Door@{Door}!set\+Spawn\+AtY@{set\+Spawn\+AtY}}
+\index{set\+Spawn\+AtY@{set\+Spawn\+AtY}!Door@{Door}}
+\subsubsection{\texorpdfstring{set\+Spawn\+At\+Y()}{setSpawnAtY()}}
+{\footnotesize\ttfamily void Door\+::set\+Spawn\+AtY (\begin{DoxyParamCaption}\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Set Y position of spawn point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em y} & New Y position value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_door_af36a171c2f6e3fe7b21d2027ada4199f}\label{class_door_af36a171c2f6e3fe7b21d2027ada4199f}} 
+\index{Door@{Door}!spawn\+AtX@{spawn\+AtX}}
+\index{spawn\+AtX@{spawn\+AtX}!Door@{Door}}
+\subsubsection{\texorpdfstring{spawn\+At\+X()}{spawnAtX()}}
+{\footnotesize\ttfamily int Door\+::spawn\+AtX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get X position of spawn point. 
+
+\begin{DoxyReturn}{Returns}
+X position of spawn point 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_door_a35f7940f9b52caad0bbf39d2054fd0a4}\label{class_door_a35f7940f9b52caad0bbf39d2054fd0a4}} 
+\index{Door@{Door}!spawn\+AtY@{spawn\+AtY}}
+\index{spawn\+AtY@{spawn\+AtY}!Door@{Door}}
+\subsubsection{\texorpdfstring{spawn\+At\+Y()}{spawnAtY()}}
+{\footnotesize\ttfamily int Door\+::spawn\+AtY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get Y position of spawn point. 
+
+\begin{DoxyReturn}{Returns}
+Y position of spawn point 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/door.\+h\item 
+src/door.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,85 @@
+\hypertarget{class_color_unlocker}{}\section{Color\+Unlocker Class Reference}
+\label{class_color_unlocker}\index{Color\+Unlocker@{Color\+Unlocker}}
+
+
+A simple color unlocking mechanism.  
+
+
+
+
+{\ttfamily \#include $<$colorunlocker.\+h$>$}
+
+Inheritance diagram for Color\+Unlocker\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_color_unlocker}
+\end{center}
+\end{figure}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_color_unlocker_a7f62aef5c3fba7f0fc57aecb3d3288a0}{color\+Unlocked} (int id)
+\begin{DoxyCompactList}\small\item\em Emits the signal that the unlocker has been collected and a color is unlocked. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_color_unlocker_a83e389003c9f59ca846fde8e40649b71}{Color\+Unlocker} (qreal x, qreal y, const Q\+Color \hyperlink{class_entity_ad14bf88ca550e2e5b13438a3faf545e6}{color})
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_color_unlocker}{Color\+Unlocker} constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_color_unlocker_aacda57c79576474b5e737eee68c95ad8}\label{class_color_unlocker_aacda57c79576474b5e737eee68c95ad8}} 
+void {\bfseries paint} (Q\+Painter $\ast$painter, const Q\+Style\+Option\+Graphics\+Item $\ast$option, Q\+Widget $\ast$widget) override
+\item 
+\mbox{\Hypertarget{class_color_unlocker_aad8a31681246fdda571902f7e2023d35}\label{class_color_unlocker_aad8a31681246fdda571902f7e2023d35}} 
+void \hyperlink{class_color_unlocker_aad8a31681246fdda571902f7e2023d35}{collect} ()
+\begin{DoxyCompactList}\small\item\em Triggers events which happen upon collection. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A simple color unlocking mechanism. 
+
+This entity can be collected, and upon collecting it, a color is unlocked and can be used by the player. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_color_unlocker_a83e389003c9f59ca846fde8e40649b71}\label{class_color_unlocker_a83e389003c9f59ca846fde8e40649b71}} 
+\index{Color\+Unlocker@{Color\+Unlocker}!Color\+Unlocker@{Color\+Unlocker}}
+\index{Color\+Unlocker@{Color\+Unlocker}!Color\+Unlocker@{Color\+Unlocker}}
+\subsubsection{\texorpdfstring{Color\+Unlocker()}{ColorUnlocker()}}
+{\footnotesize\ttfamily Color\+Unlocker\+::\+Color\+Unlocker (\begin{DoxyParamCaption}\item[{qreal}]{x,  }\item[{qreal}]{y,  }\item[{const Q\+Color}]{color }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{class_color_unlocker}{Color\+Unlocker} constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & X position of the unlocker in the scene \\
+\hline
+{\em y} & Y position of the unlocker in the scene \\
+\hline
+{\em color} & Color of the unlocker (and which will be unlocked upon collecting it) \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_color_unlocker_a7f62aef5c3fba7f0fc57aecb3d3288a0}\label{class_color_unlocker_a7f62aef5c3fba7f0fc57aecb3d3288a0}} 
+\index{Color\+Unlocker@{Color\+Unlocker}!color\+Unlocked@{color\+Unlocked}}
+\index{color\+Unlocked@{color\+Unlocked}!Color\+Unlocker@{Color\+Unlocker}}
+\subsubsection{\texorpdfstring{color\+Unlocked}{colorUnlocked}}
+{\footnotesize\ttfamily void Color\+Unlocker\+::color\+Unlocked (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Emits the signal that the unlocker has been collected and a color is unlocked. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & ID of the unlocked color \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/colorunlocker.\+h\item 
+src/colorunlocker.\+cpp\end{DoxyCompactItemize}

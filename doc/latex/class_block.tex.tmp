@@ -1,0 +1,63 @@
+\hypertarget{class_block}{}\section{Block Class Reference}
+\label{class_block}\index{Block@{Block}}
+
+
+Static collidable block.  
+
+
+
+
+{\ttfamily \#include $<$block.\+h$>$}
+
+
+
+Inheritance diagram for Block\+:
+% FIG 0
+
+
+Collaboration diagram for Block\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_block_aec663ac44747300bb04a68bdaf911cf8}{Block} (qreal x, qreal y, qreal \hyperlink{class_entity_a351a26475f8c124429a638483e95fa8e}{w}, qreal \hyperlink{class_entity_a639fea375adab80851778acb51757fb8}{h})
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_block}{Block} constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_block_aa199c6680537a305ff28c5997325883d}\label{class_block_aa199c6680537a305ff28c5997325883d}} 
+void {\bfseries paint} (Q\+Painter $\ast$painter, const Q\+Style\+Option\+Graphics\+Item $\ast$option, Q\+Widget $\ast$widget) override
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Static collidable block. 
+
+This is an entity which does not have the ability to be colored. It is always static, meaning it does not change it\textquotesingle{}s position in game. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_block_aec663ac44747300bb04a68bdaf911cf8}\label{class_block_aec663ac44747300bb04a68bdaf911cf8}} 
+\index{Block@{Block}!Block@{Block}}
+\index{Block@{Block}!Block@{Block}}
+\subsubsection{\texorpdfstring{Block()}{Block()}}
+{\footnotesize\ttfamily Block\+::\+Block (\begin{DoxyParamCaption}\item[{qreal}]{x,  }\item[{qreal}]{y,  }\item[{qreal}]{w,  }\item[{qreal}]{h }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{class_block}{Block} constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & X position of the block in the scene \\
+\hline
+{\em y} & Y position of the block in the scene \\
+\hline
+{\em w} & Width \\
+\hline
+{\em h} & Height \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/block.\+h\item 
+src/block.\+cpp\end{DoxyCompactItemize}

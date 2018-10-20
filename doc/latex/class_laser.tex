@@ -1,0 +1,91 @@
+\hypertarget{class_laser}{}\section{Laser Class Reference}
+\label{class_laser}\index{Laser@{Laser}}
+
+
+A deadly laser that brings destruction to anything in it\textquotesingle{}s wake.  
+
+
+
+
+{\ttfamily \#include $<$laser.\+h$>$}
+
+Inheritance diagram for Laser\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_laser}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_laser_a449bd9d5f3f2c266239c0672a24d122e}\label{class_laser_a449bd9d5f3f2c266239c0672a24d122e}} 
+enum \hyperlink{class_laser_a449bd9d5f3f2c266239c0672a24d122e}{Direction} \{ {\bfseries UP}, 
+{\bfseries D\+O\+WN}, 
+{\bfseries L\+E\+FT}, 
+{\bfseries R\+I\+G\+HT}
+ \}\begin{DoxyCompactList}\small\item\em The Direction enumerator. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_laser_a30b4f582099e3224f2735cd48e57a4c5}{Laser} (qreal x, qreal y, qreal dx=0, qreal dy=0, \hyperlink{class_laser_a449bd9d5f3f2c266239c0672a24d122e}{Direction} direction=D\+O\+WN, const Q\+Color \hyperlink{class_entity_ad14bf88ca550e2e5b13438a3faf545e6}{color}=Spectrum\+Colors\+::black)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_laser}{Laser} constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_laser_ab3b321f748b2bc57bbace69c82dfdce7}\label{class_laser_ab3b321f748b2bc57bbace69c82dfdce7}} 
+void {\bfseries hide} () override
+\item 
+\mbox{\Hypertarget{class_laser_a87e2856ea9fd9fd2050a8aff80274b55}\label{class_laser_a87e2856ea9fd9fd2050a8aff80274b55}} 
+void {\bfseries show} () override
+\item 
+\mbox{\Hypertarget{class_laser_aae435ce15a186fa1dc23892ceaa2fa20}\label{class_laser_aae435ce15a186fa1dc23892ceaa2fa20}} 
+Q\+RectF {\bfseries bounding\+Rect} () const override
+\item 
+\mbox{\Hypertarget{class_laser_afcb9f0aa269d428e60ff07b7b8a80a41}\label{class_laser_afcb9f0aa269d428e60ff07b7b8a80a41}} 
+Q\+Painter\+Path {\bfseries shape} () const override
+\item 
+\mbox{\Hypertarget{class_laser_a495211025f8005bb4a8037979cebb0d5}\label{class_laser_a495211025f8005bb4a8037979cebb0d5}} 
+void {\bfseries paint} (Q\+Painter $\ast$painter, const Q\+Style\+Option\+Graphics\+Item $\ast$option, Q\+Widget $\ast$widget) override
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A deadly laser that brings destruction to anything in it\textquotesingle{}s wake. 
+
+A \char`\"{}one hit kill\char`\"{} laser with a static base. The length of a laser is \char`\"{}infinite\char`\"{} (big enough to cover whole screen) but it will be blocked by a first object the laser ray collides with.
+
+\hyperlink{class_laser}{Laser} can be static (not move at all), or have a defined base length in which case it will slide on it.
+
+\hyperlink{class_laser}{Laser} has it\textquotesingle{}s own color, so if it is picked as active, the laser will dissapear leaving only the base. The base is always black. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_laser_a30b4f582099e3224f2735cd48e57a4c5}\label{class_laser_a30b4f582099e3224f2735cd48e57a4c5}} 
+\index{Laser@{Laser}!Laser@{Laser}}
+\index{Laser@{Laser}!Laser@{Laser}}
+\subsubsection{\texorpdfstring{Laser()}{Laser()}}
+{\footnotesize\ttfamily Laser\+::\+Laser (\begin{DoxyParamCaption}\item[{qreal}]{x,  }\item[{qreal}]{y,  }\item[{qreal}]{dx = {\ttfamily 0},  }\item[{qreal}]{dy = {\ttfamily 0},  }\item[{\hyperlink{class_laser_a449bd9d5f3f2c266239c0672a24d122e}{Direction}}]{direction = {\ttfamily DOWN},  }\item[{const Q\+Color}]{color = {\ttfamily SpectrumColors\+:\+:black} }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{class_laser}{Laser} constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & X position of the laser in the scene \\
+\hline
+{\em y} & Y position of the laser in the scene \\
+\hline
+{\em dx} & Base horizontal length \\
+\hline
+{\em dy} & Base vertical length \\
+\hline
+{\em direction} & \hyperlink{class_laser}{Laser} ray direction \\
+\hline
+{\em color} & \hyperlink{class_laser}{Laser} ray color\\
+\hline
+\end{DoxyParams}
+The base length cannot have both dx and dy set at the same time. The laser can only be horizontal or vertical 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/laser.\+h\item 
+src/laser.\+cpp\end{DoxyCompactItemize}

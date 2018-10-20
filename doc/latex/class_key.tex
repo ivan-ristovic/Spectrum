@@ -1,0 +1,72 @@
+\hypertarget{class_key}{}\section{Key Class Reference}
+\label{class_key}\index{Key@{Key}}
+
+
+An entity which unlockes the locked doors.  
+
+
+
+
+{\ttfamily \#include $<$key.\+h$>$}
+
+Inheritance diagram for Key\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_key}
+\end{center}
+\end{figure}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_key_a2e8f9391439ce349a3b5f0deec070ddf}\label{class_key_a2e8f9391439ce349a3b5f0deec070ddf}} 
+void \hyperlink{class_key_a2e8f9391439ce349a3b5f0deec070ddf}{collected} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_key}{Key} collected signal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_key_ab654663763723accb646253e95b6f215}{Key} (qreal x, qreal y, \hyperlink{class_door}{Door} $\ast$door, const Q\+Color \hyperlink{class_entity_ad14bf88ca550e2e5b13438a3faf545e6}{color}=Spectrum\+Colors\+::gray)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_key}{Key} constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_key_ae5ac4fed69ea016d1a7aa233f9219d37}\label{class_key_ae5ac4fed69ea016d1a7aa233f9219d37}} 
+void {\bfseries paint} (Q\+Painter $\ast$painter, const Q\+Style\+Option\+Graphics\+Item $\ast$option, Q\+Widget $\ast$widget) override
+\item 
+\mbox{\Hypertarget{class_key_acd4998bc640430d0b36ec1e7adca0fef}\label{class_key_acd4998bc640430d0b36ec1e7adca0fef}} 
+void \hyperlink{class_key_acd4998bc640430d0b36ec1e7adca0fef}{collect} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_key}{Key} collect handler. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+An entity which unlockes the locked doors. 
+
+Doors can generally be locked, and the way to unlock them is to collect the key.
+
+Each \hyperlink{class_door}{Door} has a \hyperlink{class_key}{Key} that unlocks the door. Upon collecting, the key is removed from the scene. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_key_ab654663763723accb646253e95b6f215}\label{class_key_ab654663763723accb646253e95b6f215}} 
+\index{Key@{Key}!Key@{Key}}
+\index{Key@{Key}!Key@{Key}}
+\subsubsection{\texorpdfstring{Key()}{Key()}}
+{\footnotesize\ttfamily Key\+::\+Key (\begin{DoxyParamCaption}\item[{qreal}]{x,  }\item[{qreal}]{y,  }\item[{\hyperlink{class_door}{Door} $\ast$}]{door,  }\item[{const Q\+Color}]{color = {\ttfamily SpectrumColors\+:\+:gray} }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{class_key}{Key} constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & X position of the key in scene \\
+\hline
+{\em y} & Y position of the key in scene \\
+\hline
+{\em door} & \hyperlink{class_door}{Door} that the key unlocks \\
+\hline
+{\em color} & \hyperlink{class_key}{Key} color \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/key.\+h\item 
+src/key.\+cpp\end{DoxyCompactItemize}

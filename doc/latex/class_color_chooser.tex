@@ -1,0 +1,88 @@
+\hypertarget{class_color_chooser}{}\section{Color\+Chooser Class Reference}
+\label{class_color_chooser}\index{Color\+Chooser@{Color\+Chooser}}
+
+
+Provides an interactive way to choose active color.  
+
+
+
+
+{\ttfamily \#include $<$colorchooser.\+h$>$}
+
+Inheritance diagram for Color\+Chooser\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_color_chooser}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_color_chooser_ab12d2e0cc21b24e781898fd0a65efad6}{Color\+Chooser} (qreal x, qreal y, const bool $\ast$unlocked\+Colors)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_color_chooser}{Color\+Chooser} constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_color_chooser_a90328954c0861ae766dd970bb249a5d4}\label{class_color_chooser_a90328954c0861ae766dd970bb249a5d4}} 
+Q\+RectF {\bfseries bounding\+Rect} () const override
+\item 
+\mbox{\Hypertarget{class_color_chooser_ae3f5854042dfc35672b07fe66acd3a28}\label{class_color_chooser_ae3f5854042dfc35672b07fe66acd3a28}} 
+Q\+Painter\+Path {\bfseries shape} () const override
+\item 
+\mbox{\Hypertarget{class_color_chooser_aa742a2887a5f3e07218e96d82dfc8e5f}\label{class_color_chooser_aa742a2887a5f3e07218e96d82dfc8e5f}} 
+void {\bfseries paint} (Q\+Painter $\ast$painter, const Q\+Style\+Option\+Graphics\+Item $\ast$option, Q\+Widget $\ast$widget) override
+\item 
+int \hyperlink{class_color_chooser_a20c2a870029438ab2300ad2d4c12d21c}{determine\+Color\+ID} (Q\+PointF \&mouse\+Release\+Pos) const
+\begin{DoxyCompactList}\small\item\em Determines the chosen color based on the mouse release position. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Provides an interactive way to choose active color. 
+
+This entity is a hexagon, with one color on each side. The user can then pick the color by using the mouse. Note that only unlocked colors will be available for choosing. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_color_chooser_ab12d2e0cc21b24e781898fd0a65efad6}\label{class_color_chooser_ab12d2e0cc21b24e781898fd0a65efad6}} 
+\index{Color\+Chooser@{Color\+Chooser}!Color\+Chooser@{Color\+Chooser}}
+\index{Color\+Chooser@{Color\+Chooser}!Color\+Chooser@{Color\+Chooser}}
+\subsubsection{\texorpdfstring{Color\+Chooser()}{ColorChooser()}}
+{\footnotesize\ttfamily Color\+Chooser\+::\+Color\+Chooser (\begin{DoxyParamCaption}\item[{qreal}]{x,  }\item[{qreal}]{y,  }\item[{const bool $\ast$}]{unlocked\+Colors }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{class_color_chooser}{Color\+Chooser} constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & X position of the chooser in the scene \\
+\hline
+{\em y} & Y position of the chooser in the scene \\
+\hline
+{\em unlocked\+Colors} & Vector which contains boolean values indicating if the certain color is unlocked or not \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_color_chooser_a20c2a870029438ab2300ad2d4c12d21c}\label{class_color_chooser_a20c2a870029438ab2300ad2d4c12d21c}} 
+\index{Color\+Chooser@{Color\+Chooser}!determine\+Color\+ID@{determine\+Color\+ID}}
+\index{determine\+Color\+ID@{determine\+Color\+ID}!Color\+Chooser@{Color\+Chooser}}
+\subsubsection{\texorpdfstring{determine\+Color\+I\+D()}{determineColorID()}}
+{\footnotesize\ttfamily int Color\+Chooser\+::determine\+Color\+ID (\begin{DoxyParamCaption}\item[{Q\+PointF \&}]{mouse\+Release\+Pos }\end{DoxyParamCaption}) const}
+
+
+
+Determines the chosen color based on the mouse release position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse\+Release\+Pos} & Mouse release coordinates \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Chosen color ID 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/colorchooser.\+h\item 
+src/colorchooser.\+cpp\end{DoxyCompactItemize}

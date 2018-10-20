@@ -1,0 +1,209 @@
+\hypertarget{class_entity}{}\section{Entity Class Reference}
+\label{class_entity}\index{Entity@{Entity}}
+
+
+Provides a drawing base for all objects.  
+
+
+
+
+{\ttfamily \#include $<$entity.\+h$>$}
+
+Inheritance diagram for Entity\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{class_entity}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_entity_a8bd147aa4f7a0ae97559fb71fb5a3504}{Entity} (qreal x, qreal y, qreal \hyperlink{class_entity_a351a26475f8c124429a638483e95fa8e}{w}, qreal \hyperlink{class_entity_a639fea375adab80851778acb51757fb8}{h}, const Q\+Color \hyperlink{class_entity_ad14bf88ca550e2e5b13438a3faf545e6}{color}=Spectrum\+Colors\+::gray, bool \hyperlink{class_entity_a0d21d9ca00bc81494aec120c0840c191}{collidable}=true)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_entity_a752393fb51ee62c4b4183231e05b3343}\label{class_entity_a752393fb51ee62c4b4183231e05b3343}} 
+virtual void {\bfseries hide} ()
+\item 
+\mbox{\Hypertarget{class_entity_a111d61c668ae3b78d88b60c82db8ee00}\label{class_entity_a111d61c668ae3b78d88b60c82db8ee00}} 
+virtual void {\bfseries show} ()
+\item 
+\mbox{\Hypertarget{class_entity_a3e8eb5a48e47e8d690c0e7639ee13ebb}\label{class_entity_a3e8eb5a48e47e8d690c0e7639ee13ebb}} 
+virtual Q\+RectF {\bfseries bounding\+Rect} () const override
+\item 
+\mbox{\Hypertarget{class_entity_abf7481503e83a98eed7ec345a0b09300}\label{class_entity_abf7481503e83a98eed7ec345a0b09300}} 
+virtual Q\+Painter\+Path {\bfseries shape} () const override
+\item 
+\mbox{\Hypertarget{class_entity_a4332b509c01fd3fbe500fe183c9d18d7}\label{class_entity_a4332b509c01fd3fbe500fe183c9d18d7}} 
+virtual void {\bfseries paint} (Q\+Painter $\ast$painter, const Q\+Style\+Option\+Graphics\+Item $\ast$option, Q\+Widget $\ast$widget) override
+\item 
+qreal \hyperlink{class_entity_a639fea375adab80851778acb51757fb8}{h} () const
+\begin{DoxyCompactList}\small\item\em Get entity height. \end{DoxyCompactList}\item 
+qreal \hyperlink{class_entity_a351a26475f8c124429a638483e95fa8e}{w} () const
+\begin{DoxyCompactList}\small\item\em Get entity width. \end{DoxyCompactList}\item 
+Q\+Color \hyperlink{class_entity_ad14bf88ca550e2e5b13438a3faf545e6}{color} () const
+\begin{DoxyCompactList}\small\item\em Color getter. \end{DoxyCompactList}\item 
+void \hyperlink{class_entity_a7b88e2198ec04871dcec523d1e02e656}{set\+Color} (const Q\+Color new\+Color)
+\begin{DoxyCompactList}\small\item\em Color setter. \end{DoxyCompactList}\item 
+bool \hyperlink{class_entity_a0d21d9ca00bc81494aec120c0840c191}{collidable} () const
+\begin{DoxyCompactList}\small\item\em Collidable getter. \end{DoxyCompactList}\item 
+virtual qreal \hyperlink{class_entity_aa404777579f858d2e4dd0c584c20c95a}{centerX} () const
+\begin{DoxyCompactList}\small\item\em Get X coordinate of the center in parent coordinate system. \end{DoxyCompactList}\item 
+virtual qreal \hyperlink{class_entity_ac0af460a15e0d087d8fbbbe1e6f7dd95}{centerY} () const
+\begin{DoxyCompactList}\small\item\em Get Y coordinate of the center in parent coordinate system. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_entity_aa4f8b6919e9646c8dd33013ed585caf9}\label{class_entity_aa4f8b6919e9646c8dd33013ed585caf9}} 
+qreal \hyperlink{class_entity_aa4f8b6919e9646c8dd33013ed585caf9}{\+\_\+w}
+\begin{DoxyCompactList}\small\item\em Width. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_entity_ac84e203caccde9a0b9e77a3f6faf9f72}\label{class_entity_ac84e203caccde9a0b9e77a3f6faf9f72}} 
+qreal \hyperlink{class_entity_ac84e203caccde9a0b9e77a3f6faf9f72}{\+\_\+h}
+\begin{DoxyCompactList}\small\item\em Height. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_entity_a310d0e5d3f4283ce280b568035a6ea2a}\label{class_entity_a310d0e5d3f4283ce280b568035a6ea2a}} 
+Q\+Color \hyperlink{class_entity_a310d0e5d3f4283ce280b568035a6ea2a}{\+\_\+color}
+\begin{DoxyCompactList}\small\item\em Color. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_entity_a7175301bfaa1a27b247ee40e7ba177e5}\label{class_entity_a7175301bfaa1a27b247ee40e7ba177e5}} 
+bool \hyperlink{class_entity_a7175301bfaa1a27b247ee40e7ba177e5}{\+\_\+collidable}
+\begin{DoxyCompactList}\small\item\em Collidable indicator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Provides a drawing base for all objects. 
+
+The \hyperlink{class_entity}{Entity} class is derived from Q\+Graphics\+Object, which is a virtual class (and is virtual itself). Hence, any class which is derived from \hyperlink{class_entity}{Entity} must implement the methods overridden from Q\+Graphics\+Object. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_entity_a8bd147aa4f7a0ae97559fb71fb5a3504}\label{class_entity_a8bd147aa4f7a0ae97559fb71fb5a3504}} 
+\index{Entity@{Entity}!Entity@{Entity}}
+\index{Entity@{Entity}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{Entity()}{Entity()}}
+{\footnotesize\ttfamily Entity\+::\+Entity (\begin{DoxyParamCaption}\item[{qreal}]{x,  }\item[{qreal}]{y,  }\item[{qreal}]{w,  }\item[{qreal}]{h,  }\item[{const Q\+Color}]{color = {\ttfamily SpectrumColors\+:\+:gray},  }\item[{bool}]{collidable = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & X position of the item in scene \\
+\hline
+{\em y} & Y position of the item in scene \\
+\hline
+{\em w} & Width \\
+\hline
+{\em h} & Height \\
+\hline
+{\em color} & Item color \\
+\hline
+{\em collidable} & Indicates whether the item is collidable or not \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_entity_aa404777579f858d2e4dd0c584c20c95a}\label{class_entity_aa404777579f858d2e4dd0c584c20c95a}} 
+\index{Entity@{Entity}!centerX@{centerX}}
+\index{centerX@{centerX}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{center\+X()}{centerX()}}
+{\footnotesize\ttfamily qreal Entity\+::centerX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get X coordinate of the center in parent coordinate system. 
+
+\begin{DoxyReturn}{Returns}
+X coordinate of the center 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{class_player_ac5fcb472ea5e7e2222c13e086ced0aa1}{Player}.
+
+\mbox{\Hypertarget{class_entity_ac0af460a15e0d087d8fbbbe1e6f7dd95}\label{class_entity_ac0af460a15e0d087d8fbbbe1e6f7dd95}} 
+\index{Entity@{Entity}!centerY@{centerY}}
+\index{centerY@{centerY}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{center\+Y()}{centerY()}}
+{\footnotesize\ttfamily qreal Entity\+::centerY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get Y coordinate of the center in parent coordinate system. 
+
+\begin{DoxyReturn}{Returns}
+Y coordinate of the center 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{class_player_ac67429e56fbd74495b4614b7b27ca5f6}{Player}.
+
+\mbox{\Hypertarget{class_entity_a0d21d9ca00bc81494aec120c0840c191}\label{class_entity_a0d21d9ca00bc81494aec120c0840c191}} 
+\index{Entity@{Entity}!collidable@{collidable}}
+\index{collidable@{collidable}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{collidable()}{collidable()}}
+{\footnotesize\ttfamily bool Entity\+::collidable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Collidable getter. 
+
+\begin{DoxyReturn}{Returns}
+Boolean value indicating whether the entity is collidable 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_entity_ad14bf88ca550e2e5b13438a3faf545e6}\label{class_entity_ad14bf88ca550e2e5b13438a3faf545e6}} 
+\index{Entity@{Entity}!color@{color}}
+\index{color@{color}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{color()}{color()}}
+{\footnotesize\ttfamily Q\+Color Entity\+::color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Color getter. 
+
+\begin{DoxyReturn}{Returns}
+Q\+Color object representing the \hyperlink{class_entity}{Entity} color 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_entity_a639fea375adab80851778acb51757fb8}\label{class_entity_a639fea375adab80851778acb51757fb8}} 
+\index{Entity@{Entity}!h@{h}}
+\index{h@{h}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{h()}{h()}}
+{\footnotesize\ttfamily qreal Entity\+::h (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get entity height. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_entity}{Entity} height 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_entity_a7b88e2198ec04871dcec523d1e02e656}\label{class_entity_a7b88e2198ec04871dcec523d1e02e656}} 
+\index{Entity@{Entity}!set\+Color@{set\+Color}}
+\index{set\+Color@{set\+Color}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{set\+Color()}{setColor()}}
+{\footnotesize\ttfamily void Entity\+::set\+Color (\begin{DoxyParamCaption}\item[{const Q\+Color}]{new\+Color }\end{DoxyParamCaption})}
+
+
+
+Color setter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Color} & New \hyperlink{class_entity}{Entity} color \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_entity_a351a26475f8c124429a638483e95fa8e}\label{class_entity_a351a26475f8c124429a638483e95fa8e}} 
+\index{Entity@{Entity}!w@{w}}
+\index{w@{w}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{w()}{w()}}
+{\footnotesize\ttfamily qreal Entity\+::w (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get entity width. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_entity}{Entity} width 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/entity.\+h\item 
+src/entity.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,81 @@
+\hypertarget{class_color_changer}{}\section{Color\+Changer Class Reference}
+\label{class_color_changer}\index{Color\+Changer@{Color\+Changer}}
+
+
+Expanding circle which changes the active color in a pretty way.  
+
+
+
+
+{\ttfamily \#include $<$colorchanger.\+h$>$}
+
+Inheritance diagram for Color\+Changer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_color_changer}
+\end{center}
+\end{figure}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_color_changer_afb1d640d1c2959456064663d41b9d83c}\label{class_color_changer_afb1d640d1c2959456064663d41b9d83c}} 
+void \hyperlink{class_color_changer_afb1d640d1c2959456064663d41b9d83c}{expanding\+Done} ()
+\begin{DoxyCompactList}\small\item\em Signal emitted when the expanding is stopped. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_color_changer_a00dc557d11916140b90a8569cba0d507}{Color\+Changer} (Q\+Graphics\+View $\ast$view, qreal x, qreal y, const Q\+Color \hyperlink{class_entity_ad14bf88ca550e2e5b13438a3faf545e6}{color}=Spectrum\+Colors\+::gray)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_color_changer}{Color\+Changer} constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_color_changer_aa8101dd864786e4abd8700d1b43501b9}\label{class_color_changer_aa8101dd864786e4abd8700d1b43501b9}} 
+Q\+RectF {\bfseries bounding\+Rect} () const override
+\item 
+\mbox{\Hypertarget{class_color_changer_a8164abe7d958432691f2b95c574c702a}\label{class_color_changer_a8164abe7d958432691f2b95c574c702a}} 
+Q\+Painter\+Path {\bfseries shape} () const override
+\item 
+\mbox{\Hypertarget{class_color_changer_a42f637d64bf3298d78341941843729fb}\label{class_color_changer_a42f637d64bf3298d78341941843729fb}} 
+void {\bfseries paint} (Q\+Painter $\ast$painter, const Q\+Style\+Option\+Graphics\+Item $\ast$option, Q\+Widget $\ast$widget) override
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Expanding circle which changes the active color in a pretty way. 
+
+This entity is a circle, expanding on a timer until the whole scene is filled.
+
+Usual method of usage\+:
+\begin{DoxyItemize}
+\item Create a new \hyperlink{class_color_changer}{Color\+Changer} object (which automatically starts expanding) from the center of the player
+\item Wait for the signal which is sent when the expanding is finished
+\end{DoxyItemize}
+
+The signal is sent to the Game class, to stop the expanding animation and process the hidden objects. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_color_changer_a00dc557d11916140b90a8569cba0d507}\label{class_color_changer_a00dc557d11916140b90a8569cba0d507}} 
+\index{Color\+Changer@{Color\+Changer}!Color\+Changer@{Color\+Changer}}
+\index{Color\+Changer@{Color\+Changer}!Color\+Changer@{Color\+Changer}}
+\subsubsection{\texorpdfstring{Color\+Changer()}{ColorChanger()}}
+{\footnotesize\ttfamily Color\+Changer\+::\+Color\+Changer (\begin{DoxyParamCaption}\item[{Q\+Graphics\+View $\ast$}]{view,  }\item[{qreal}]{x,  }\item[{qreal}]{y,  }\item[{const Q\+Color}]{color = {\ttfamily SpectrumColors\+:\+:gray} }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{class_color_changer}{Color\+Changer} constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em view} & The view which contains the object\textquotesingle{}s scene \\
+\hline
+{\em x} & X position of the changer in the scene \\
+\hline
+{\em y} & Y position of the changer in the scene \\
+\hline
+{\em color} & Color \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/colorchanger.\+h\item 
+src/colorchanger.\+cpp\end{DoxyCompactItemize}

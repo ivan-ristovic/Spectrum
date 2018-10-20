@@ -1,0 +1,33 @@
+digraph "SpectrumGame::save"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node33 [label="SpectrumGame::save",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node33 -> Node34 [color="midnightblue",fontsize="10",style="solid"];
+  Node34 [label="GameLoader::isValid",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_game_loader.html#a80f63255ecc84d19e231fcd7069fe07f",tooltip="Get the file validity indicator. "];
+  Node33 -> Node35 [color="midnightblue",fontsize="10",style="solid"];
+  Node35 [label="GameLoader::writeGameData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_game_loader.html#aa597ca460dd45081cfbbfc3f71a75c5a",tooltip="Write game data to the file. "];
+  Node33 -> Node36 [color="midnightblue",fontsize="10",style="solid"];
+  Node36 [label="SpectrumGame::pause",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spectrum_game.html#a4b01f375f8445c13925bc47561290eaa",tooltip="Pauses the game. "];
+  Node33 -> Node37 [color="midnightblue",fontsize="10",style="solid"];
+  Node37 [label="SpectrumGame::interact",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spectrum_game.html#a479951533ca641e0da457e1403212829",tooltip="Handles the interaction of a player and objects on the scene. "];
+  Node37 -> Node38 [color="midnightblue",fontsize="10",style="solid"];
+  Node38 [label="Door::isLocked",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_door.html#ab72060b0c9bbfa00dcc2f02952927dba",tooltip="Check if the door is locked. "];
+  Node37 -> Node39 [color="midnightblue",fontsize="10",style="solid"];
+  Node39 [label="Door::changesDefaultSpawn",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_door.html#a5d65aee71d60f72cae37d085d19faa80",tooltip="Check if the doors change the current player spawn in the level. "];
+  Node37 -> Node40 [color="midnightblue",fontsize="10",style="solid"];
+  Node40 [label="Door::spawnAtX",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_door.html#af36a171c2f6e3fe7b21d2027ada4199f",tooltip="Get X position of spawn point. "];
+  Node37 -> Node41 [color="midnightblue",fontsize="10",style="solid"];
+  Node41 [label="Door::spawnAtY",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_door.html#a35f7940f9b52caad0bbf39d2054fd0a4",tooltip="Get Y position of spawn point. "];
+  Node37 -> Node42 [color="midnightblue",fontsize="10",style="solid"];
+  Node42 [label="SpectrumGame::loadLevel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spectrum_game.html#aaad553200f65a101e4f6b499385b4b84",tooltip="Loads a new level based on the level name. "];
+  Node37 -> Node43 [color="midnightblue",fontsize="10",style="solid"];
+  Node43 [label="Door::nextLevel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_door.html#a2ed65424b864f28dc980205c38ebd1d9",tooltip="Get the next level string. "];
+  Node33 -> Node44 [color="midnightblue",fontsize="10",style="solid"];
+  Node44 [label="SpectrumColors::getColor\lFromID",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spectrum_colors.html#a7a0be9b9aa0b40fe03b956263671c861",tooltip="Get a color based on the ID. "];
+  Node33 -> Node45 [color="midnightblue",fontsize="10",style="solid"];
+  Node45 [label="SpectrumGame::isUnlocked",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spectrum_game.html#a0b95f601a2eb6a31baf10b6d37e38a2c",tooltip="Check if the color is unlocked. "];
+  Node45 -> Node46 [color="midnightblue",fontsize="10",style="solid"];
+  Node46 [label="SpectrumColors::toEnum",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spectrum_colors.html#a51d3b530d739592685c70d32df2253c9",tooltip="Get a color ID based on the color object. "];
+}

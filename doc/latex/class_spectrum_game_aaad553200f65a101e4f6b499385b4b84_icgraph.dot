@@ -1,0 +1,17 @@
+digraph "SpectrumGame::loadLevel"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node27 [label="SpectrumGame::loadLevel",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node27 -> Node28 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node28 [label="SpectrumGame::SpectrumGame",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spectrum_game.html#ac410e5206f57c99ee344d63946c66879",tooltip="SpectrumGame constructor. "];
+  Node27 -> Node29 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node29 [label="SpectrumGame::load",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spectrum_game.html#a46b514f657f13b2c4fa20402a4e44c72",tooltip="Loads a game from the save file. "];
+  Node27 -> Node30 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node30 [label="SpectrumGame::interact",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spectrum_game.html#a479951533ca641e0da457e1403212829",tooltip="Handles the interaction of a player and objects on the scene. "];
+  Node30 -> Node31 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node31 [label="SpectrumGame::save",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spectrum_game.html#a55bb099940b204796a5f406b3a69de79",tooltip="Save a game to a file. "];
+  Node27 -> Node32 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node32 [label="SpectrumGame::isUnlocked",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spectrum_game.html#a36ec9500dcbb54607fdd667c2ee796ed",tooltip="Check if the color is unlocked. "];
+}

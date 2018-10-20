@@ -1,0 +1,15 @@
+digraph "SpectrumColors::toEnum"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node7 [label="SpectrumColors::toEnum",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="ColorUnlocker::collect",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_color_unlocker.html#aad8a31681246fdda571902f7e2023d35",tooltip="Triggers events which happen upon collection. "];
+  Node7 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="SpectrumGame::isUnlocked",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spectrum_game.html#a0b95f601a2eb6a31baf10b6d37e38a2c",tooltip="Check if the color is unlocked. "];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="SpectrumGame::save",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spectrum_game.html#a55bb099940b204796a5f406b3a69de79",tooltip="Save a game to a file. "];
+  Node9 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="SpectrumGame::isUnlocked",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spectrum_game.html#a36ec9500dcbb54607fdd667c2ee796ed",tooltip="Check if the color is unlocked. "];
+}

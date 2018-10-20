@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/levels">
+        <file>000.lvl</file>
+        <file>001.lvl</file>
+        <file>002.lvl</file>
+        <file>003.lvl</file>
+        <file>004.lvl</file>
+        <file>005.lvl</file>
+        <file>006.lvl</file>
+        <file>007.lvl</file>
+        <file>008.lvl</file>
+        <file>009.lvl</file>
+        <file>010.lvl</file>
+        <file>011.lvl</file>
+        <file>012.lvl</file>
+        <file>014.lvl</file>
+        <file>013.lvl</file>
+        <file>015.lvl</file>
+    </qresource>
+</RCC>

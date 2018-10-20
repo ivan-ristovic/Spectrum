@@ -1,0 +1,36 @@
+N/A
+
+# Player spawn coordinates
+p 60 470
+
+
+#### Static entities ####
+
+#   Border
+
+# Bottom
+s block 0 550 800 50
+# Left side
+s block 0 50 20 500
+# Right side
+s block 780 50 20 500
+# Top
+s block 0 0 800 50
+
+# Gravity Switcher
+c yellow
+s gravswitcher 200 500 down
+c orange
+s gravswitcher 600 0 up
+
+# Yellow unlocker
+c yellow
+s unlocker 350 70
+
+
+#   Door
+c green
+s door 60 450 014 680 470
+c green
+s door 680 450 015
+
