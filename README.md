@@ -1,5 +1,7 @@
 # :rainbow: RS07-spectrum :rainbow:
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/1ae23ccb524d438996b957481d59401f)](https://app.codacy.com/manual/ivan-ristovic/Spectrum?utm_source=github.com&utm_medium=referral&utm_content=ivan-ristovic/Spectrum&utm_campaign=Badge_Grade_Dashboard)
+
 ![green_screenshot](screenshots/06_2017-06-05.gif)
 
 ## :page_facing_up: Description
