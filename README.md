@@ -13,7 +13,13 @@ Created by:
 - [Ivan Ristovic](https://github.com/ivan-ristovic)
 
 ## :computer: Installation
-For now the only way to run the project is to import it in QtCreator and run it from there.
+Clone the repository, run `qmake` from the repository root to generate a `Makefile`, and then run `make`:
+```sh
+$ git clone https://github.com/ivan-ristovic/Spectrum.git
+$ cd Spectrum
+$ qmake
+$ make
+```
 
 ## :page_facing_up: Description
 Spectrum is a 2D puzzle game.
